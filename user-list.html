@@ -80,19 +80,19 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="project-list.html" class="nav-link">
+                                <a href="project-list.html" class="nav-link ">
                                     <i class="nav-icon fal fa-building"></i> 
                                     <p>โปรเจค</p>
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="agency-list.html" class="nav-link active">
+                                <a href="agency-list.html" class="nav-link">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>หน่วยงาน</p>
                                 </a> 
                             </li>   
                             <li class="nav-item">
-                                <a href="user-list.html" class="nav-link ">
+                                <a href="user-list.html" class="nav-link active">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>User</p>
                                 </a> 
@@ -132,7 +132,8 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <h1 class="m-0">
-                                    <strong>หน่วยงาน</strong>    
+                                    <strong>User</strong>   
+                                    <a href="user-form-add.html" class="btn btn-success float-right"> เพิ่ม User</a>
                                 </h1> 
                             </div>  
                         </div> 
@@ -141,57 +142,117 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
-                  
-                            <div class="col">
-                                <div class="row justify-content-center"> 
-                                    <div class="col-xl-8 col-lg-12 col-12">
-                                        <form>     
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">โปรเจค</label> 
-                                                </div>  
-                                                <div class="col-xl-6">
-                                                    <select class="selectpicker w-100" title="โปรเจค " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                        <option>โปรเจค 1</option>
-                                                        <option>โปรเจค 2</option>
-                                                        <option>โปรเจค 3</option>
-                                                        <option>โปรเจค 4</option>
-                                                        <option>โปรเจค 5</option>
-                                                    </select>
-                                                </div> 
-                                            </div>
-                                             
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ชื่อหน่วยงาน</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div>
-                                            
-                                            
-                                             
+                 
+            
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade show active" id="tab1">
 
-                                            <div class="col-12 p-0 mt-3"> 
-                                                <hr>
-                                            </div>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3 col-12"></div> 
-                                                <div class="col-xl-6 col-12"> 
-                                                    <button type="submit" class="btn btn-info pl-4 pr-4">บันทึก</button>
-                                                    <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
-                                                </div>
+                                    <div class="col-12 search-label">
+                                        <div class="row">
+                                            <div class="col-xl-2">
+                                                <label for="">ชื่อผู้ใช้งาน</label>
+                                                <input type="text" class="form-control"  >
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">ตำแหน่ง</label>
+                                                <select class="selectpicker w-100" title="ตำแหน่ง " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>ตำแหน่ง 1</option>
+                                                    <option>ตำแหน่ง 2</option>
+                                                    <option>ตำแหน่ง 3</option>
+                                                    <option>ตำแหน่ง 4</option>
+                                                    <option>ตำแหน่ง 5</option>
+                                                </select>
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">หน่วยงาน</label>
+                                                <select class="selectpicker w-100" title="หน่วยงาน " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                    <option>หน่วยงาน 1</option>
+                                                    <option>หน่วยงาน 2</option>
+                                                    <option>หน่วยงาน 3</option>
+                                                    <option>หน่วยงาน 4</option>
+                                                    <option>หน่วยงาน 5</option>
+                                                </select>
+                                            </div> 
+                                            <div class="col-xl-2">
+                                                <label for="">วันที่เพิ่ม	</label>
+                                                <input type="text" class="form-control"  >
                                             </div>   
-
-
-                                        </form>
-
+                                            <div class="col"> 
+                                                <label class="col-12">&nbsp; </label>
+                                                <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                </button> 
+                                            </div> 
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
- 
+
+                                    <br>
+
+                                    <div class="col-12 table-responsive" id="table-dex">
+                                       
+
+                                        <table id="tb-job" class="table table-striped  " style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>ชื่อ นามสกุล</th> 
+                                                    <th>หน่วยงาน</th> 
+                                                    <th>ตำแหน่ง</th>   
+                                                    <th>วันที่เพิ่ม</th>  
+                                                    <th>&nbsp;</th>
+                                                    <th>&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td>1</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>HR</td> 
+                                                    <td>ห้วหน้าแผนก</td> 
+                                                    <td>10/02/2566</td> 
+                                                    <td>
+                                                        <img src="images/user8-128x128.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="fal fa-file-alt"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>     
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>HR</td> 
+                                                    <td>ห้วหน้าแผนก</td> 
+                                                    <td>10/02/2566</td> 
+                                                    <td>
+                                                        <img src="images/user2-160x160.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="fal fa-file-alt"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>   
+                                                <tr> 
+                                                    <td>3</td>
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>HR</td> 
+                                                    <td>ห้วหน้าแผนก</td> 
+                                                    <td>10/02/2566</td> 
+                                                    <td>
+                                                        <img src="images/user7-128x128.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="fal fa-file-alt"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                           
+                                            </tbody> 
+                                        </table>
+                                    </div>
+                                </div> 
+                            </div>       
                         </div>
                     </div> 
                 </section> 

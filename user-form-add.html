@@ -86,13 +86,13 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="agency-list.html" class="nav-link active">
+                                <a href="agency-list.html" class="nav-link">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>หน่วยงาน</p>
                                 </a> 
                             </li>   
                             <li class="nav-item">
-                                <a href="user-list.html" class="nav-link ">
+                                <a href="user-list.html" class="nav-link active">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>User</p>
                                 </a> 
@@ -132,7 +132,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <h1 class="m-0">
-                                    <strong>หน่วยงาน</strong>    
+                                    <strong>User</strong>    
                                 </h1> 
                             </div>  
                         </div> 
@@ -148,22 +148,40 @@
                                         <form>     
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
-                                                    <label for="">โปรเจค</label> 
+                                                    <label for="">หน่วยงาน</label> 
                                                 </div>  
                                                 <div class="col-xl-6">
-                                                    <select class="selectpicker w-100" title="โปรเจค " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                        <option>โปรเจค 1</option>
-                                                        <option>โปรเจค 2</option>
-                                                        <option>โปรเจค 3</option>
-                                                        <option>โปรเจค 4</option>
-                                                        <option>โปรเจค 5</option>
+                                                    <select class="selectpicker w-100" title="หน่วยงาน " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                        <option>หน่วยงาน 1</option>
+                                                        <option>หน่วยงาน 2</option>
+                                                        <option>หน่วยงาน 3</option>
+                                                        <option>หน่วยงาน 4</option>
+                                                        <option>หน่วยงาน 5</option>
                                                     </select>
                                                 </div> 
                                             </div>
                                              
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
-                                                    <label for="">ชื่อหน่วยงาน</label> 
+                                                    <label for="">ตำแหน่ง</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"  value="">
+                                                </div> 
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">ชื่อ-นามสกุล</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"  value="">
+                                                </div> 
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">เบอร์โทร</label> 
                                                 </div>  
                                                 <div class="col-xl-6"> 
                                                     <input type="text" class="form-control"  value="">
@@ -171,6 +189,31 @@
                                             </div>
                                             
                                             
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">อีเมล</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"  value="">
+                                                </div> 
+                                            </div>
+                                            
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">อัพโหลด</label> 
+                                                </div>  
+                                                <div class="col-xl-6">  
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <span class="btn btn-default btn-file">
+                                                                Browse… <input type="file" id="imgInp">
+                                                            </span>
+                                                        </span>
+                                                        <input type="text" class="form-control" readonly>
+                                                    </div>
+                                                    <img id='img-upload'/>
+                                                </div> 
+                                            </div>  
                                              
 
                                             <div class="col-12 p-0 mt-3"> 
