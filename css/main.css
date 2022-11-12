@@ -574,3 +574,19 @@ header nav .navbar-brand img{
 #img-upload{
   width: 100%;
 }
+.img-obj{
+  height: 60px;
+  width: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+table td{
+  vertical-align: middle !important;
+}
+.img-show{
+  height: 160px; 
+  border-radius: 4px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
