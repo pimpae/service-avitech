@@ -67,15 +67,9 @@
                         </div>
                     </div>  
                     <nav class="mt-2">
-                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">  
                             <li class="nav-item ">
-                                <a href="service-form.html" class="nav-link active">
-                                    <i class="nav-icon fas fa-file"></i> 
-                                    <p>แจ้งซ่อม</p>
-                                </a> 
-                            </li> 
-                            <li class="nav-item ">
-                                <a href="service-list.html" class="nav-link">
+                                <a href="service-list.html" class="nav-link active">
                                     <i class="nav-icon fas fa-tools"></i>
                                     <p>รายการแจ้งซ่อม</p>
                                 </a> 
@@ -144,7 +138,7 @@
 
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
-                                                    <label for="">อุปกรณ์</label> 
+                                                    <label for="">อุปกรณ์ / ระบบ</label> 
                                                 </div>  
                                                 <div class="col-xl-6"> 
                                                     <select class="selectpicker w-100" title="อุปกรณ์ " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
@@ -166,7 +160,7 @@
                                             </div>
                                             <div class="form-group row">
                                                 <div class="col-xl-12">
-                                                    <label for="">รายละเอียดเพิ่มเติม อาการที่เสีย</label> 
+                                                    <label for="">รายละเอียดเพิ่มเติม อาการที่แจ้งซ่อม</label> 
                                                 </div>  
                                                 <div class="col-xl-9"> 
                                                     <textarea class="form-control" name=""  rows="6"></textarea>
@@ -219,12 +213,28 @@
                                                     <input type="text" class="form-control"  value="">
                                                 </div> 
                                             </div>     
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">ผู้ประสานงานเพิ่มเติม</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"  value="">
+                                                </div> 
+                                            </div>       
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">ผู้ประสานงานเพิ่มเติม</label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"  value="">
+                                                </div> 
+                                            </div>     
 
                                             
 
                                             <div class="form-group row">
                                                 <div class="col-xl-3">
-                                                    <label for="">อัพโหลด</label> 
+                                                    <label for="">อัพโหลดรูป</label> 
                                                 </div>  
                                                 <div class="col-xl-6">  
                                                     <div class="input-group">
@@ -238,6 +248,24 @@
                                                     <img id='img-upload'/>
                                                 </div> 
                                             </div>  
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">อัพโหลดวิดีโอ</label> 
+                                                </div>  
+                                                <div class="col-xl-6">  
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <span class="btn btn-default btn-file">
+                                                                Browse… <input type="file" id="imgInp">
+                                                            </span>
+                                                        </span>
+                                                        <input type="text" class="form-control" readonly>
+                                                    </div>
+                                                    <img id='img-upload'/>
+                                                </div> 
+                                            </div>  
+
+
 
                                             <div class="col-12 p-0 mt-3"> 
                                                 <hr>

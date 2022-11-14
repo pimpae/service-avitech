@@ -74,13 +74,13 @@
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link">
+                                <a href="index.html" class="nav-link ">
                                     <i class="nav-icon far fa-chart-line"></i> 
                                     <p>Dashboard</p>
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="main-service-list.html" class="nav-link">
+                                <a href="main-service-list.html" class="nav-link active">
                                     <i class="nav-icon fal fa-list"></i> 
                                     <p>รายการแจ้งซ่อม</p>
                                 </a> 
@@ -98,7 +98,7 @@
                                 </a> 
                             </li>   
                             <li class="nav-item">
-                                <a href="user-list.html" class="nav-link active">
+                                <a href="user-list.html" class="nav-link ">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>User</p>
                                 </a> 
@@ -146,8 +146,8 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <h1 class="m-0">
-                                    <strong>User</strong>   
-                                    <a href="user-form-add.html" class="btn btn-success float-right"> เพิ่ม User</a>
+                                    <strong>รายการแจ้งซ่อม</strong>   
+                                    <!-- <a href="project-form-add.html" class="btn btn-success float-right"> สร้างโปรเจค</a> -->
                                 </h1> 
                             </div>  
                         </div> 
@@ -163,37 +163,29 @@
 
                                     <div class="col-12 search-label">
                                         <div class="row">
-                                            <div class="col-xl-2">
-                                                <label for="">ชื่อผู้ใช้งาน</label>
+                                            <div class="col">
+                                                <label for="">ชื่อโปรเจค</label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">ตำแหน่ง</label>
-                                                <select class="selectpicker w-100" title="ตำแหน่ง " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>ตำแหน่ง 1</option>
-                                                    <option>ตำแหน่ง 2</option>
-                                                    <option>ตำแหน่ง 3</option>
-                                                    <option>ตำแหน่ง 4</option>
-                                                    <option>ตำแหน่ง 5</option>
-                                                </select>
-                                            </div> 
-                                            <div class="col-xl-2">
+                                            <div class="col">
+                                                <label for="">ชื่อระบบ/อุปกรณ์</label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
+                                            <div class="col">
                                                 <label for="">หน่วยงาน</label>
-                                                <select class="selectpicker w-100" title="หน่วยงาน " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>หน่วยงาน 1</option>
-                                                    <option>หน่วยงาน 2</option>
-                                                    <option>หน่วยงาน 3</option>
-                                                    <option>หน่วยงาน 4</option>
-                                                    <option>หน่วยงาน 5</option>
-                                                </select>
-                                            </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">วันที่เพิ่ม	</label>
                                                 <input type="text" class="form-control"  >
-                                            </div>   
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">วันที่แจ้ง </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">ผู้แจ้ง </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
                                             <div class="col"> 
                                                 <label class="col-12">&nbsp; </label>
-                                                <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                <button class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
                                                 </button> 
                                             </div> 
                                         </div>
@@ -208,60 +200,178 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>ชื่อ นามสกุล</th> 
-                                                    <th>หน่วยงาน</th> 
-                                                    <th>ตำแหน่ง</th>   
-                                                    <th>วันที่เพิ่ม</th>  
-                                                    <th>&nbsp;</th>
+                                                    <th>เลขที่ใบแจ้งซ่อม</th>
+                                                    <th>วันที่แจ้ง</th> 
+                                                    <th>โปรเจค</th>  
+                                                    <th>หน่วยงาน</th>
+                                                    <th>ผู้แจ้ง</th>
+                                                    <th>ระบบ / อุปกรณ์</th>       
+                                                    <th>รูปภาพ</th>    
+                                                    <th>สถานะ</th>   
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
                                                     <td>HR</td> 
-                                                    <td>ห้วหน้าแผนก</td> 
-                                                    <td>10/02/2566</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
                                                     <td>
-                                                        <img src="images/user8-128x128.jpg" class="img-obj" alt="">
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
                                                     </td>  
                                                     <td>
-                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="fal fa-file-alt"></i>
+                                                        <span class="badge badge-danger">รอตรวจสอบ</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status1.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
                                                         </a> 
                                                     </td>
-                                                </tr>     
+                                                </tr>      
                                                 <tr> 
                                                     <td>2</td>
-                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
                                                     <td>HR</td> 
-                                                    <td>ห้วหน้าแผนก</td> 
-                                                    <td>10/02/2566</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
                                                     <td>
-                                                        <img src="images/user2-160x160.jpg" class="img-obj" alt="">
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
                                                     </td>  
                                                     <td>
-                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="fal fa-file-alt"></i>
+                                                        <span class="badge badge-success">ซ่อมสำเร็จแล้ว</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status4.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
                                                         </a> 
                                                     </td>
-                                                </tr>   
+                                                </tr>         
                                                 <tr> 
                                                     <td>3</td>
-                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
                                                     <td>HR</td> 
-                                                    <td>ห้วหน้าแผนก</td> 
-                                                    <td>10/02/2566</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
                                                     <td>
-                                                        <img src="images/user7-128x128.jpg" class="img-obj" alt="">
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
                                                     </td>  
                                                     <td>
-                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
-                                                            <i class="fal fa-file-alt"></i>
+                                                        <span class="badge badge-secondary">อยู่ระหว่างการซ่อม</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status1.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
                                                         </a> 
                                                     </td>
-                                                </tr>                                           
+                                                </tr>      
+                                                <tr> 
+                                                    <td>4</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-success">ซ่อมสำเร็จแล้ว</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status4.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>       
+                                                <tr> 
+                                                    <td>5</td>
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
+                                                    <td>
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-success">ซ่อมสำเร็จแล้ว</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status4.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>      
+                                                <tr> 
+                                                    <td>6</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-success">ซ่อมสำเร็จแล้ว</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status4.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>       
+                                                <tr> 
+                                                    <td>7</td>
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
+                                                    <td>
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-secondary">อยู่ระหว่างการซ่อม</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status4.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>      
+                                                <tr> 
+                                                    <td>8</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-success">ซ่อมสำเร็จแล้ว</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-des-status4.html" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                               
                                             </tbody> 
                                         </table>
                                     </div>
