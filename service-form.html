@@ -70,7 +70,13 @@
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">  
                             <li class="nav-item ">
-                                <a href="service-list.html" class="nav-link active">
+                                <a href="service-form.html" class="nav-link active">
+                                    <i class="nav-icon far fa-file-user"></i>
+                                    <p>แจ้งซ่อม</p>
+                                </a> 
+                            </li>   
+                            <li class="nav-item ">
+                                <a href="service-list.html" class="nav-link">
                                     <i class="nav-icon fas fa-tools"></i>
                                     <p>รายการแจ้งซ่อม</p>
                                 </a> 
@@ -119,166 +125,180 @@
                                     <div class="col-xl-8 col-lg-12 col-12">
                                         <form>    
                                             <h4 class="border-bottom pb-2 mb-3 font-weight-bold">รายละเอียดการซ่อม</h4>
+
                                             
-                                            <div class="form-group row mb-0">
-                                                <label class="col-xl-3">ประเภท</label>
-                                                <div class="col-xl-6">
-                                                    <div class="form-group row">
-                                                        <div class="custom-control custom-radio ml-2">
-                                                            <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1">
-                                                            <label for="customRadio1" class="custom-control-label">ฮาร์ดแวร์</label>
-                                                        </div>
-                                                        <div class="custom-control custom-radio ml-5">
-                                                            <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2">
-                                                            <label for="customRadio2" class="custom-control-label">ซอฟต์แวร์</label>
+                                            <div class="form-group row">
+                                                <div class="col-xl-3">
+                                                    <label for="">เลขครุภัณฑ์ </label> 
+                                                </div>  
+                                                <div class="col-xl-6"> 
+                                                    <input type="text" class="form-control"  value="">
+                                                </div> 
+                                                <button class="btn btn-success pb-1"><i class="fas fa-file-search "></i> ค้นหา</button>
+                                            </div>
+                                            
+                                            
+                                            <div id="g1">
+                                                <div class="form-group row mb-0">
+                                                    <label class="col-xl-3">ประเภท</label>
+                                                    <div class="col-xl-6">
+                                                        <div class="form-group row">
+                                                            <div class="custom-control custom-radio ml-2">
+                                                                <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1">
+                                                                <label for="customRadio1" class="custom-control-label">ฮาร์ดแวร์</label>
+                                                            </div>
+                                                            <div class="custom-control custom-radio ml-5">
+                                                                <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2">
+                                                                <label for="customRadio2" class="custom-control-label">ซอฟต์แวร์</label>
+                                                            </div> 
                                                         </div> 
+                                                    </div>
+                                                </div> 
+    
+    
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">อุปกรณ์ / ระบบ</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <select class="selectpicker w-100" title="อุปกรณ์ " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
+                                                            <option>อุปกรณ์ 1</option>
+                                                            <option>อุปกรณ์ 2</option>
+                                                            <option>อุปกรณ์ 3</option>
+                                                            <option>อุปกรณ์ 4</option>
+                                                            <option>อุปกรณ์ 5</option>
+                                                        </select>
+                                                    </div> 
+                                                </div> 
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">หมายเลขทะเบียนอุปกรณ์</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <input type="text" class="form-control"  value="">
                                                     </div> 
                                                 </div>
-                                            </div> 
-
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">อุปกรณ์ / ระบบ</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <select class="selectpicker w-100" title="อุปกรณ์ " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                        <option>อุปกรณ์ 1</option>
-                                                        <option>อุปกรณ์ 2</option>
-                                                        <option>อุปกรณ์ 3</option>
-                                                        <option>อุปกรณ์ 4</option>
-                                                        <option>อุปกรณ์ 5</option>
-                                                    </select>
-                                                </div> 
-                                            </div> 
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">หมายเลขทะเบียนอุปกรณ์</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div>
-                                            <div class="form-group row">
-                                                <div class="col-xl-12">
-                                                    <label for="">รายละเอียดเพิ่มเติม อาการที่แจ้งซ่อม</label> 
-                                                </div>  
-                                                <div class="col-xl-9"> 
-                                                    <textarea class="form-control" name=""  rows="6"></textarea>
-                                                </div> 
-                                            </div>
-                                            
-                                            
-                                            <br>
-
-
-                                            <h4 class="border-bottom pb-2 mb-3 font-weight-bold">ข้อมูลผู้แจ้ง</h4>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">หน่วยงาน</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <select class="selectpicker w-100" title="หน่วยงาน" name="sel2"  disabled>  
-                                                        <option>หน่วยงาน 1</option>
-                                                        <option selected>หน่วยงาน 2</option>
-                                                        <option>หน่วยงาน 3</option>
-                                                        <option>หน่วยงาน 4</option>
-                                                        <option>หน่วยงาน 5</option>
-                                                    </select>
-                                                </div> 
-                                            </div>  
-
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ชื่อ-นามสกุล ผู้แจ้ง</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div> 
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ตำแหน่ง</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div>  
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">เบอร์โทรติดต่อ</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div>     
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ผู้ประสานงานเพิ่มเติม</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div>       
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">ผู้ประสานงานเพิ่มเติม</label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                            </div>     
-
-                                            
-
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">อัพโหลดรูป</label> 
-                                                </div>  
-                                                <div class="col-xl-6">  
-                                                    <div class="input-group">
-                                                        <span class="input-group-btn">
-                                                            <span class="btn btn-default btn-file">
-                                                                Browse… <input type="file" id="imgInp">
-                                                            </span>
-                                                        </span>
-                                                        <input type="text" class="form-control" readonly>
-                                                    </div>
-                                                    <img id='img-upload'/>
-                                                </div> 
-                                            </div>  
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">อัพโหลดวิดีโอ</label> 
-                                                </div>  
-                                                <div class="col-xl-6">  
-                                                    <div class="input-group">
-                                                        <span class="input-group-btn">
-                                                            <span class="btn btn-default btn-file">
-                                                                Browse… <input type="file" id="imgInp">
-                                                            </span>
-                                                        </span>
-                                                        <input type="text" class="form-control" readonly>
-                                                    </div>
-                                                    <img id='img-upload'/>
-                                                </div> 
-                                            </div>  
-
-
-
-                                            <div class="col-12 p-0 mt-3"> 
-                                                <hr>
-                                            </div>
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3 col-12"></div> 
-                                                <div class="col-xl-6 col-12"> 
-                                                    <button type="submit" class="btn btn-info pl-4 pr-4">บันทึก</button>
-                                                    <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                <div class="form-group row">
+                                                    <div class="col-xl-12">
+                                                        <label for="">รายละเอียดเพิ่มเติม อาการที่แจ้งซ่อม</label> 
+                                                    </div>  
+                                                    <div class="col-xl-9"> 
+                                                        <textarea class="form-control" name=""  rows="6"></textarea>
+                                                    </div> 
                                                 </div>
-                                            </div>   
+                                                
+                                                
+                                                <br>
+    
+    
+                                                <h4 class="border-bottom pb-2 mb-3 font-weight-bold">ข้อมูลผู้แจ้ง</h4>
+                                                
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">หน่วยงาน</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <select class="selectpicker w-100" title="หน่วยงาน" name="sel2"  disabled>  
+                                                            <option>หน่วยงาน 1</option>
+                                                            <option selected>หน่วยงาน 2</option>
+                                                            <option>หน่วยงาน 3</option>
+                                                            <option>หน่วยงาน 4</option>
+                                                            <option>หน่วยงาน 5</option>
+                                                        </select>
+                                                    </div> 
+                                                </div>  
+    
+    
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">ชื่อ-นามสกุล ผู้แจ้ง</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <input type="text" class="form-control"  value="">
+                                                    </div> 
+                                                </div> 
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">ตำแหน่ง</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <input type="text" class="form-control"  value="">
+                                                    </div> 
+                                                </div>      
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">ผู้ประสานงานเพิ่มเติม</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <input type="text" class="form-control"  value="">
+                                                    </div> 
+                                                </div>     
+    
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">เบอร์โทรติดต่อ</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <input type="text" class="form-control"  value="">
+                                                    </div> 
+                                                </div>     
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">อีเมล</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6"> 
+                                                        <input type="text" class="form-control"  value="">
+                                                    </div> 
+                                                </div>   
+                                                
+    
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">อัพโหลดรูป</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6">  
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <span class="btn btn-default btn-file">
+                                                                    Browse… <input type="file" id="imgInp">
+                                                                </span>
+                                                            </span>
+                                                            <input type="text" class="form-control" readonly>
+                                                        </div>
+                                                        <img id='img-upload'/>
+                                                    </div> 
+                                                </div>  
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3">
+                                                        <label for="">อัพโหลดวิดีโอ</label> 
+                                                    </div>  
+                                                    <div class="col-xl-6">  
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">
+                                                                <span class="btn btn-default btn-file">
+                                                                    Browse… <input type="file" id="imgInp">
+                                                                </span>
+                                                            </span>
+                                                            <input type="text" class="form-control" readonly>
+                                                        </div>
+                                                        <img id='img-upload'/>
+                                                    </div> 
+                                                </div>  
+    
+    
+    
+                                                <div class="col-12 p-0 mt-3"> 
+                                                    <hr>
+                                                </div>
+                                                
+                                                <div class="form-group row">
+                                                    <div class="col-xl-3 col-12"></div> 
+                                                    <div class="col-xl-6 col-12"> 
+                                                        <button type="submit" class="btn btn-info pl-4 pr-4">บันทึก</button>
+                                                        <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                    </div>
+                                                </div>   
+                                            </div>
 
 
                                         </form>
@@ -313,6 +333,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"></script>
  
         <script>
+
+
+
             $(document).ready( function() {
                 $(document).on('change', '.btn-file :file', function() {
                 var input = $(this),
