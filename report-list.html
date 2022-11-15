@@ -87,7 +87,7 @@
                                 </a> 
                             </li> 
                             <li class="nav-item">
-                                <a href="agency-list.html" class="nav-link active">
+                                <a href="agency-list.html" class="nav-link ">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>หน่วยงาน</p>
                                 </a> 
@@ -111,7 +111,7 @@
                                 </a> 
                             </li>    
                             <li class="nav-item">
-                                <a href="report-list.html" class="nav-link ">
+                                <a href="report-list.html" class="nav-link active">
                                     <i class="nav-icon fal fa-file-alt"></i>
                                     <p>รายงาน</p>
                                 </a> 
@@ -147,8 +147,8 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <h1 class="m-0">
-                                    <strong>หน่วยงาน</strong>   
-                                    <a href="agency-form-add.html" class="btn btn-success float-right"> สร้างหน่วยงาน</a>
+                                    <strong>รายงานการแจ้งซ่อม</strong>   
+                                    <!-- <a href="project-form-add.html" class="btn btn-success float-right"> สร้างโปรเจค</a> -->
                                 </h1> 
                             </div>  
                         </div> 
@@ -164,21 +164,33 @@
 
                                     <div class="col-12 search-label">
                                         <div class="row">
-                                            <div class="col-xl-2">
-                                                <label for="">ชื่อหน่วยงาน</label>
-                                                <input type="text" class="form-control"  >
-                                            </div>  
-                                            <div class="col-xl-2">
-                                                <label for="">ที่อยู่</label>
+                                            <div class="col">
+                                                <label for="">ชื่อโปรเจค</label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">วันที่สร้าง	</label>
+                                            <div class="col">
+                                                <label for="">ชื่อระบบ/อุปกรณ์</label>
                                                 <input type="text" class="form-control"  >
-                                            </div>   
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">หน่วยงาน</label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">วันที่แจ้ง </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">ผู้แจ้ง </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
                                             <div class="col"> 
                                                 <label class="col-12">&nbsp; </label>
-                                                <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                <button class="btn btn-primary btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                </button> 
+                                                <button class="btn btn-success btn-sm pt-2 ">  <i class="fas fa-file-excel"></i> EXCEL
+                                                </button> 
+                                                <button class="btn btn-danger btn-sm pt-2 ">  <i class="fas fa-file-pdf"></i> PDF
                                                 </button> 
                                             </div> 
                                         </div>
@@ -193,24 +205,105 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>ชื่อหน่วยงาน</th> 
-                                                    <th>ที่อยู่</th> 
-                                                    <th>วันที่สร้าง</th>  
-                                                    <th>&nbsp;</th>
+                                                    <th>เลขที่ใบแจ้งซ่อม</th>
+                                                    <th>วันที่แจ้ง</th> 
+                                                    <th>โปรเจค</th>  
+                                                    <th>หน่วยงาน</th>
+                                                    <th>ผู้แจ้ง</th>
+                                                    <th>ระบบ / อุปกรณ์</th>       
+                                                    <th>วันที่ซ่อมสำเร็จ</th>    
+                                                    <th>เจ้าหน้าที่ซ่อม</th>    
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>หน่วยงาน 1</td> 
-                                                    <th> 2/486 ถนนศรีอยุธยา แขวงทุ่งพญาไท เขตราชเทวี กรุงเทพมหานคร 10400</th> 
-                                                    <td>10/02/2566</td> 
-                                                    <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                             
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td>  
+                                                </tr>      
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td>  
+                                                </tr>         
+                                                <tr> 
+                                                    <td>3</td>
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td> 
+                                                </tr>      
+                                                <tr> 
+                                                    <td>4</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td>
+                                                </tr>       
+                                                <tr> 
+                                                    <td>5</td>
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td>  
+                                                </tr>      
+                                                <tr> 
+                                                    <td>6</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td>  
+                                                </tr>       
+                                                <tr> 
+                                                    <td>7</td>
+                                                    <td>6511102011</td>
+                                                    <td>12/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>acer z4660g</td>   
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td> 
+                                                </tr>      
+                                                <tr> 
+                                                    <td>8</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>Project A</td>
+                                                    <td>HR</td> 
+                                                    <td>อดิศร ศรีสุธรรม</td> 
+                                                    <td>acer z4660g</td>    
+                                                    <td>12/02/2565 13:02</td>
+                                                    <td><span class="badge badge-secondary">ตรีภพ แก้วสีทา</span> </td>  
+                                                </tr>                                               
                                             </tbody> 
                                         </table>
                                     </div>

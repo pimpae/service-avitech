@@ -69,55 +69,17 @@
                             <img src="images/user6-128x128.jpg" class="img-circle elevation-2" alt="User Image">
                         </div>
                         <div class="info">
-                            <a href="#" class="d-block">Admin</a>
+                            <a href="#" class="d-block">เจ้าหน้าที่ : ตรีภพ แก้วสีทา</a>
                         </div>
                     </div>  
                     <nav class="mt-2">
-                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link ">
-                                    <i class="nav-icon far fa-chart-line"></i> 
-                                    <p>Dashboard</p>
-                                </a> 
-                            </li> 
-                            <li class="nav-item">
-                                <a href="main-service-list.html" class="nav-link">
-                                    <i class="nav-icon fal fa-list"></i> 
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">   
+                            <li class="nav-item active">
+                                <a href="service-list.html" class="nav-link active">
+                                    <i class="nav-icon fas fa-tools"></i>
                                     <p>รายการแจ้งซ่อม</p>
                                 </a> 
-                            </li> 
-                            <li class="nav-item">
-                                <a href="agency-list.html" class="nav-link active">
-                                    <i class="nav-icon fas fa-users"></i>
-                                    <p>หน่วยงาน</p>
-                                </a> 
                             </li>   
-                            <li class="nav-item">
-                                <a href="project-list.html" class="nav-link ">
-                                    <i class="nav-icon fal fa-tasks-alt"></i>
-                                    <p>โปรเจค</p>
-                                </a> 
-                            </li>   
-                            <li class="nav-item">
-                                <a href="user-list.html" class="nav-link ">
-                                    <i class="nav-icon fas fa-user"></i>
-                                    <p>User</p>
-                                </a> 
-                            </li>  
-                            <li class="nav-item">
-                                <a href="equipment-list.html" class="nav-link ">
-                                    <i class="nav-icon fas fa-laptop"></i>
-                                    <p>อุปกรณ์ / ระบบ</p>
-                                </a> 
-                            </li>    
-                            <li class="nav-item">
-                                <a href="report-list.html" class="nav-link ">
-                                    <i class="nav-icon fal fa-file-alt"></i>
-                                    <p>รายงาน</p>
-                                </a> 
-                            </li>    
-
-
 
                             
                             <li class="nav-item">
@@ -131,8 +93,8 @@
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
-                                            <i class="fad fa-list-ol"></i>
-                                            <p>generator เลขแจ้งซ่อม</p>
+                                            <i class="far fa-user-chart"></i>
+                                            <p>####</p>
                                         </a>
                                     </li>   
                                 </ul>
@@ -145,10 +107,10 @@
                 <div class="content-header">
                     <div class="container-fluid">
                         <div class="row mb-2">
-                            <div class="col">
+                            <div class="col-sm-6">
                                 <h1 class="m-0">
-                                    <strong>หน่วยงาน</strong>   
-                                    <a href="agency-form-add.html" class="btn btn-success float-right"> สร้างหน่วยงาน</a>
+                                    <strong>รายการแจ้งซ่อม</strong>   
+                                    <a href="service-form.html" class="btn btn-success float-right"> แจ้งซ่อม</a>
                                 </h1> 
                             </div>  
                         </div> 
@@ -164,18 +126,22 @@
 
                                     <div class="col-12 search-label">
                                         <div class="row">
-                                            <div class="col-xl-2">
-                                                <label for="">ชื่อหน่วยงาน</label>
-                                                <input type="text" class="form-control"  >
-                                            </div>  
-                                            <div class="col-xl-2">
-                                                <label for="">ที่อยู่</label>
+                                            <div class="col">
+                                                <label for="">เลขที่ใบแจ้งซ่อม</label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">วันที่สร้าง	</label>
+                                            <div class="col">
+                                                <label for="">ชื่ออุปกรณ์</label>
                                                 <input type="text" class="form-control"  >
-                                            </div>   
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">วันที่แจ้ง </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
+                                            <div class="col">
+                                                <label for="">เลขครุภัณฑ์ </label>
+                                                <input type="text" class="form-control"  >
+                                            </div>  
                                             <div class="col"> 
                                                 <label class="col-12">&nbsp; </label>
                                                 <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
@@ -193,24 +159,58 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>ชื่อหน่วยงาน</th> 
-                                                    <th>ที่อยู่</th> 
-                                                    <th>วันที่สร้าง</th>  
+                                                    <th>เลขที่ใบแจ้งซ่อม</th>
+                                                    <th>วันที่แจ้ง</th> 
+                                                    <th>ผู้แจ้ง</th>
+                                                    <th>หน่วยงาน</th>
+                                                    <th>ชื่ออุปกรณ์</th>      
+                                                    <th>หมายเลขทะเบียนอุปกรณ์</th> 
+                                                    <th>รูปภาพ</th>    
+                                                    <th>สถานะ</th>   
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>หน่วยงาน 1</td> 
-                                                    <th> 2/486 ถนนศรีอยุธยา แขวงทุ่งพญาไท เขตราชเทวี กรุงเทพมหานคร 10400</th> 
-                                                    <td>10/02/2566</td> 
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>HR</td> 
+                                                    <td>acer z4660g</td>  
+                                                    <td>บค 191/22-21</td>  
                                                     <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-secondary">อยู่ระหว่างการซ่อม</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="service-officer-status1.html" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
                                                             <i class="far fa-eye"></i>
                                                         </a> 
                                                     </td>
-                                                </tr>                                             
+                                                </tr>      
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>6511102011</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>อดิศร ศรีสุธรรม</td>
+                                                    <td>HR</td> 
+                                                    <td>acer z4660g</td>  
+                                                    <td>บค 191/22-21</td>  
+                                                    <td>
+                                                        <img src="images/laptop-under-500-2048px-acer-1.jpg" class="img-obj" alt="">
+                                                    </td>  
+                                                    <td>
+                                                        <span class="badge badge-success">ซ่อมสำเร็จแล้ว</span> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-sm pt-2"  data-toggle="tooltip" data-placement="top" title="ข้อมูลนักศึกษา">
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                                 
                                             </tbody> 
                                         </table>
                                     </div>
