@@ -123,112 +123,99 @@
                             <div class="col">
                                 <div class="row justify-content-center"> 
                                     <div class="col-xl-8 col-lg-12 col-12">
-                                        <form>    
-                                            <h4 class="border-bottom pb-2 mb-3 font-weight-bold">รายละเอียดการซ่อม</h4>
 
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">เลขครุภัณฑ์ </label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                                <button type="button" class="btn btn-success pb-1" id="commodity"><i class="fas fa-file-search "></i> ค้นหา</button>
-                                            </div>
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">แจ้งซ่อมอุปกรณ์</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">แจ้งซ่อมระบบ</a>
+                                            </li> 
+                                        </ul> 
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane fade pt-4 show active" id="tab1">
+                                                <form>    
+                                                    <h4 class="border-bottom pb-2 mb-3 font-weight-bold">รายละเอียดการซ่อม</h4>
 
-                                            <div class="form-group row commodity border-bottom pb-4" style="display: none;">
-                                                <div class="col-xl-3">
-                                                    <label for="">เลือกจากเลขเลขครุภัณฑ์ </label> 
-                                                </div>  
-                                                <div class="col-xl-9"> &nbsp;</div>  
-                                                <div class="col-xl-12">
-                                                    <div class="row">
-                                                        <div class="col-xl-1 h5">#</div>
-                                                        <div class="col-xl-3 h5">รายการ </div>
-                                                        <div class="col-xl-2 h5">รุ่น/ยี่ห้อ</div>
-                                                        <div class="col-xl-1 h5">s/n </div>
-                                                        <div class="col-xl-2 h5">วันที่เริ่มประกัน  </div>
-                                                        <div class="col-xl-2 h5">วันที่สิ้นสุดประกัน  </div> 
-                                                    </div> 
-                                                    <div class="row mb-1">
-                                                        <div class="col-xl-1 h5">1 </div>
-                                                        <div class="col-xl-3 h5 font-weight-bold">computer </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">acer/veriton 2261 </div>
-                                                        <div class="col-xl-1 h5 font-weight-bold">AC5555 </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
-                                                        <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
-                                                    </div>
-                                                    <div class="row mb-1">
-                                                        <div class="col-xl-1 h5">2</div>
-                                                        <div class="col-xl-3 h5 font-weight-bold">monitor </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">acer/veriton 2261 </div>
-                                                        <div class="col-xl-1 h5 font-weight-bold">AC34545 </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
-                                                        <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
-                                                    </div>
-                                                    <div class="row mb-1">
-                                                        <div class="col-xl-1 h5">3 </div>
-                                                        <div class="col-xl-3 h5 font-weight-bold">keyboard </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">acer/am05 </div>
-                                                        <div class="col-xl-1 h5 font-weight-bold">AC54778 </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
-                                                        <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
-                                                    </div>
-                                                    <div class="row mb-1">
-                                                        <div class="col-xl-1 h5">4 </div>
-                                                        <div class="col-xl-3 h5 font-weight-bold">mouse   </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">acer/USB X1 </div>
-                                                        <div class="col-xl-1 h5 font-weight-bold">AC23001 </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
-                                                        <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
-                                                        <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
-                                                    </div>
-                                                </div>  
-
-                                                
-                                                
-                                            </div>
-
-                                            
-                                            <div class="form-group row">
-                                                <div class="col-xl-3">
-                                                    <label for="">S/N </label> 
-                                                </div>  
-                                                <div class="col-xl-6"> 
-                                                    <input type="text" class="form-control"  value="">
-                                                </div> 
-                                                <button type="button" class="btn btn-success pb-1"><i class="fas fa-file-search "></i> ค้นหา</button>
-                                            </div>
-                                            
-                                            
-                                            <div id="g1">
-                                                <div class="form-group row mb-0">
-                                                    <label class="col-xl-3">ประเภท</label>
-
-                                                    <div class="col-xl-2">
-                                                        <div class="form-group user_typex"> 
-                                                            <div class="custom-control custom-radio">
-                                                                <input class="custom-control-input" type="radio" id="user_type1" name="user_type" value="type1" checked>
-                                                                <label for="user_type1" class="custom-control-label">อุปกรณ์</label>
-                                                            </div>
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">เลขครุภัณฑ์ </label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
                                                         </div> 
+                                                        <button type="button" class="btn btn-success pb-1" id="commodity"><i class="fas fa-file-search "></i> ค้นหา</button>
                                                     </div>
-                                                    <div class="col-xl-2">
-                                                        <div class="form-group user_typex"> 
-                                                            <div class="custom-control custom-radio">
-                                                                <input class="custom-control-input" type="radio" id="user_type2" name="user_type" value="type2">
-                                                                <label for="user_type2" class="custom-control-label">ระบบ</label>
+
+                                                    <div class="form-group row commodity border-bottom pb-4" style="display: none;">
+                                                        <div class="col-xl-3">
+                                                            <label for="">เลือกจากเลขเลขครุภัณฑ์ </label> 
+                                                        </div>  
+                                                        <div class="col-xl-9"> &nbsp;</div>  
+                                                        <div class="col-xl-12">
+                                                            <div class="row">
+                                                                <div class="col-xl-1 h5">#</div>
+                                                                <div class="col-xl-3 h5">รายการ </div>
+                                                                <div class="col-xl-2 h5">รุ่น/ยี่ห้อ</div>
+                                                                <div class="col-xl-1 h5">s/n </div>
+                                                                <div class="col-xl-2 h5">วันที่เริ่มประกัน  </div>
+                                                                <div class="col-xl-2 h5">วันที่สิ้นสุดประกัน  </div> 
+                                                            </div> 
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">1 </div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">computer </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">acer/veriton 2261 </div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">AC5555 </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
                                                             </div>
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">2</div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">monitor </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">acer/veriton 2261 </div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">AC34545 </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
+                                                            </div>
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">3 </div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">keyboard </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">acer/am05 </div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">AC54778 </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
+                                                            </div>
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">4 </div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">mouse   </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">acer/USB X1 </div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">AC23001 </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
+                                                            </div>
+                                                        </div>  
+
+                                                        
+                                                        
+                                                    </div>
+
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">S/N </label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
                                                         </div> 
-                                                    </div>   
-                                                </div> 
-    
-    
-                                                <div class="g1">
+                                                        <button type="button" class="btn btn-success pb-1"><i class="fas fa-file-search "></i> ค้นหา</button>
+                                                    </div>
+                                      
+        
                                                     <div class="form-group row">
                                                         <div class="col-xl-3">
                                                             <label for="">อุปกรณ์  </label> 
@@ -243,150 +230,307 @@
                                                             </select>
                                                         </div> 
                                                     </div> 
-                                                </div>
-                                                <div class="g2">
+                                            
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-12">
+                                                            <label for="">รายละเอียดเพิ่มเติม อาการที่แจ้งซ่อม</label> 
+                                                        </div>  
+                                                        <div class="col-xl-9"> 
+                                                            <textarea class="form-control" name=""  rows="6"></textarea>
+                                                        </div> 
+                                                    </div>
+                                                    
+                                                    
+                                                    <br>
+        
+        
+                                                    <h4 class="border-bottom pb-2 mb-3 font-weight-bold">ข้อมูลผู้แจ้ง</h4>
+                                                    
                                                     <div class="form-group row">
                                                         <div class="col-xl-3">
-                                                            <label for="">ระบบ  </label> 
+                                                            <label for="">หน่วยงาน</label> 
                                                         </div>  
                                                         <div class="col-xl-6"> 
-                                                            <select class="selectpicker w-100" title="ระบบ " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                                <option>ระบบ 1</option>
-                                                                <option>ระบบ 2</option>
-                                                                <option>ระบบ 3</option>
-                                                                <option>ระบบ 4</option>
-                                                                <option>ระบบ 5</option>
+                                                            <select class="selectpicker w-100" title="หน่วยงาน" name="sel2"  disabled>  
+                                                                <option>หน่วยงาน 1</option>
+                                                                <option selected>หน่วยงาน 2</option>
+                                                                <option>หน่วยงาน 3</option>
+                                                                <option>หน่วยงาน 4</option>
+                                                                <option>หน่วยงาน 5</option>
                                                             </select>
                                                         </div> 
-                                                    </div> 
-
-                                                </div>
-                                                
-                                                <div class="form-group row">
-                                                    <div class="col-xl-12">
-                                                        <label for="">รายละเอียดเพิ่มเติม อาการที่แจ้งซ่อม</label> 
                                                     </div>  
-                                                    <div class="col-xl-9"> 
-                                                        <textarea class="form-control" name=""  rows="6"></textarea>
+        
+        
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">ชื่อ-นามสกุล ผู้แจ้ง</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
                                                     </div> 
-                                                </div>
-                                                
-                                                
-                                                <br>
-    
-    
-                                                <h4 class="border-bottom pb-2 mb-3 font-weight-bold">ข้อมูลผู้แจ้ง</h4>
-                                                
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">หน่วยงาน</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <select class="selectpicker w-100" title="หน่วยงาน" name="sel2"  disabled>  
-                                                            <option>หน่วยงาน 1</option>
-                                                            <option selected>หน่วยงาน 2</option>
-                                                            <option>หน่วยงาน 3</option>
-                                                            <option>หน่วยงาน 4</option>
-                                                            <option>หน่วยงาน 5</option>
-                                                        </select>
-                                                    </div> 
-                                                </div>  
-    
-    
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">ชื่อ-นามสกุล ผู้แจ้ง</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  value="">
-                                                    </div> 
-                                                </div> 
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">ตำแหน่ง</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  value="">
-                                                    </div> 
-                                                </div>      
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">ผู้ประสานงานเพิ่มเติม</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  value="">
-                                                    </div> 
-                                                </div>     
-    
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">เบอร์โทรติดต่อ</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  value="">
-                                                    </div> 
-                                                </div>     
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">อีเมล</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6"> 
-                                                        <input type="text" class="form-control"  value="">
-                                                    </div> 
-                                                </div>   
-                                                
-    
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">อัพโหลดรูป</label> 
-                                                    </div>  
-                                                    <div class="col-xl-6">  
-                                                        <div class="input-group">
-                                                            <span class="input-group-btn">
-                                                                <span class="btn btn-default btn-file">
-                                                                    Browse… <input type="file" id="imgInp">
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">ตำแหน่ง</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>      
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">ผู้ประสานงานเพิ่มเติม</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>     
+        
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">เบอร์โทรติดต่อ</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>     
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">อีเมล</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>   
+                                                    
+        
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">อัพโหลดรูป</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6">  
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <span class="btn btn-default btn-file">
+                                                                        Browse… <input type="file" id="imgInp">
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            <input type="text" class="form-control" readonly>
-                                                        </div>
-                                                        <img id='img-upload'/>
-                                                    </div> 
-                                                </div>  
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3">
-                                                        <label for="">อัพโหลดวิดีโอ</label> 
+                                                                <input type="text" class="form-control" readonly>
+                                                            </div>
+                                                            <img id='img-upload'/>
+                                                        </div> 
                                                     </div>  
-                                                    <div class="col-xl-6">  
-                                                        <div class="input-group">
-                                                            <span class="input-group-btn">
-                                                                <span class="btn btn-default btn-file">
-                                                                    Browse… <input type="file" id="imgInp">
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">อัพโหลดวิดีโอ</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6">  
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <span class="btn btn-default btn-file">
+                                                                        Browse… <input type="file" id="imgInp">
+                                                                    </span>
                                                                 </span>
-                                                            </span>
-                                                            <input type="text" class="form-control" readonly>
-                                                        </div>
-                                                        <img id='img-upload'/>
-                                                    </div> 
-                                                </div>  
-    
-    
-    
-                                                <div class="col-12 p-0 mt-3"> 
-                                                    <hr>
-                                                </div>
-                                                
-                                                <div class="form-group row">
-                                                    <div class="col-xl-3 col-12"></div> 
-                                                    <div class="col-xl-6 col-12"> 
-                                                        <button type="submit" class="btn btn-info pl-4 pr-4">บันทึก</button>
-                                                        <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                                <input type="text" class="form-control" readonly>
+                                                            </div>
+                                                            <img id='img-upload'/>
+                                                        </div> 
+                                                    </div>  
+        
+        
+        
+                                                    <div class="col-12 p-0 mt-3"> 
+                                                        <hr>
                                                     </div>
-                                                </div>   
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3 col-12"></div> 
+                                                        <div class="col-xl-6 col-12"> 
+                                                            <button type="submit" class="btn btn-info pl-4 pr-4">บันทึก</button>
+                                                            <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                        </div>
+                                                    </div>   
+                                
+
+
+                                                </form>
                                             </div>
+                                            <div role="tabpanel" class="tab-pane fade pt-4" id="tab2">
+                                                <form>
+                                                    <h4 class="border-bottom pb-2 mb-3 font-weight-bold">รายละเอียดการซ่อม</h4>
+
+                                 
+
+                                                    <div class="form-group row commodity border-bottom pb-4"  >
+                                                        <div class="col-xl-3">
+                                                            <label for="">ระบบทั้งหมด </label> 
+                                                        </div>  
+                                                        <div class="col-xl-9"> &nbsp;</div>  
+                                                        <div class="col-xl-12">
+                                                            <div class="row">
+                                                                <div class="col-xl-1 h5">#</div>
+                                                                <div class="col-xl-3 h5">เลขที่</div>
+                                                                <div class="col-xl-2 h5">ชื่อระบบ </div>
+                                                                <div class="col-xl-1 h5">สถานที่ติดตั้ง</div>
+                                                                <div class="col-xl-2 h5">วันที่เริ่มประกัน  </div>
+                                                                <div class="col-xl-2 h5">วันที่สิ้นสุดประกัน  </div> 
+                                                            </div> 
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">1 </div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">COM 8982-1</div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">Hr Service</div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">SSO BKK </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
+                                                            </div> 
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">2 </div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">COM 8982-1</div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">Hr Service</div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">SSO BKK </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
+                                                            </div> 
+                                                            <div class="row mb-1">
+                                                                <div class="col-xl-1 h5">3 </div>
+                                                                <div class="col-xl-3 h5 font-weight-bold">COM 8982-1</div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">Hr Service</div>
+                                                                <div class="col-xl-1 h5 font-weight-bold">SSO BKK </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2566	  </div>
+                                                                <div class="col-xl-2 h5 font-weight-bold">10/02/2568  </div>
+                                                                <button class="btn btn-primary btn-sm pb-0" type="button"><i class="fas fa-chevron-circle-right"></i> เลือก</button>
+                                                            </div> 
+                                                        </div>  
+                                                        
+                                                        
+                                                        
+                                                    </div>
 
 
-                                        </form>
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-12">
+                                                            <label for="">รายละเอียดเพิ่มเติม อาการที่แจ้งซ่อม</label> 
+                                                        </div>  
+                                                        <div class="col-xl-9"> 
+                                                            <textarea class="form-control" name=""  rows="6"></textarea>
+                                                        </div> 
+                                                    </div>
 
+                                                    <h4 class="border-bottom pb-2 mb-3 font-weight-bold">ข้อมูลผู้แจ้ง</h4>
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">หน่วยงาน</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <select class="selectpicker w-100" title="หน่วยงาน" name="sel2"  disabled>  
+                                                                <option>หน่วยงาน 1</option>
+                                                                <option selected>หน่วยงาน 2</option>
+                                                                <option>หน่วยงาน 3</option>
+                                                                <option>หน่วยงาน 4</option>
+                                                                <option>หน่วยงาน 5</option>
+                                                            </select>
+                                                        </div> 
+                                                    </div>  
+        
+        
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">ชื่อ-นามสกุล ผู้แจ้ง</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div> 
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">ตำแหน่ง</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>      
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">ผู้ประสานงานเพิ่มเติม</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>     
+        
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">เบอร์โทรติดต่อ</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>     
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">อีเมล</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control"  value="">
+                                                        </div> 
+                                                    </div>   
+                                                    
+        
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">อัพโหลดรูป</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6">  
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <span class="btn btn-default btn-file">
+                                                                        Browse… <input type="file" id="imgInp">
+                                                                    </span>
+                                                                </span>
+                                                                <input type="text" class="form-control" readonly>
+                                                            </div>
+                                                            <img id='img-upload'/>
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">อัพโหลดวิดีโอ</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6">  
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <span class="btn btn-default btn-file">
+                                                                        Browse… <input type="file" id="imgInp">
+                                                                    </span>
+                                                                </span>
+                                                                <input type="text" class="form-control" readonly>
+                                                            </div>
+                                                            <img id='img-upload'/>
+                                                        </div> 
+                                                    </div>  
+        
+        
+        
+                                                    <div class="col-12 p-0 mt-3"> 
+                                                        <hr>
+                                                    </div>
+                                                    
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3 col-12"></div> 
+                                                        <div class="col-xl-6 col-12"> 
+                                                            <button type="submit" class="btn btn-info pl-4 pr-4">บันทึก</button>
+                                                            <button type="button" class="btn btn-secondary"  >ยกเลิก</button>
+                                                        </div>
+                                                    </div>   
+
+
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
