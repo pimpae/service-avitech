@@ -590,3 +590,18 @@ table td{
   object-fit: cover;
   border: 1px solid #ccc;
 }
+
+#table-dex th{
+  padding: 5px 8px;
+  font-size: 15px;
+}
+#table-dex td{
+  padding: 5px 8px;
+  font-size: 18px;
+}
+#table-dex td:nth-child(n+1):nth-child(-n+13){
+  background-color: #F9FBEF;
+}
+#table-dex td:nth-child(n+14):nth-child(-n+23){
+  background-color: #F8CCCB;
+} 
