@@ -161,123 +161,371 @@
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
                  
-            
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">อุปกรณ์</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">ระบบ</a>
+                                </li> 
+                            </ul> 
+
+
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
-
-                                    <div class="col-12 search-label">
-                                        <div class="row">
-                                            <div class="col-xl-2">
-                                                <label for="">เลขครุภัณฑ์ </label>
-                                                <input type="text" class="form-control"  >
-                                            </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">ชื่ออุปกรณ์/ระบบ </label>
-                                                <input type="text" class="form-control"  >
-                                            </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">ประเภท</label>
-                                                <select class="selectpicker w-100" title="ประเภท " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>ฮาร์ดแวร์</option>
-                                                    <option>ระบบ </option> 
-                                                </select>
-                                            </div>  
-                                            <div class="col-xl-2">
-                                                <label for="">โปรเจค</label>
-                                                <input type="text" class="form-control"  >
-                                            </div>   
-                                            <div class="col-xl-2">
-                                                <label for="">ชื่อผู้ประสานงาน
-                                                </label>
-                                                <input type="text" class="form-control"  >
-                                            </div>
-                                            <div class="col"> 
-                                                <label class="col-12">&nbsp; </label>
-                                                <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
-                                                </button> 
-                                            </div> 
-                                        </div>
-                                    </div>
-
+                                    
                                     <br>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-success" href="#tab11" role="tab" data-toggle="tab">ส่วนการขายสินค้า</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-danger" href="#tab12" role="tab" data-toggle="tab">ส่วนการซื้อสินค้า</a>
+                                        </li> 
+                                    </ul> 
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade show active" id="tab11">
+                                            <br>
+                                            <div class="col-12 search-label">
+                                                <div class="row">
+                                                    <div class="col-xl-2">
+                                                        <label for="">เลขครุภัณฑ์ </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div> 
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชื่ออุปกรณ์ </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>  
+                                                    <div class="col-xl-2">
+                                                        <label for="">โปรเจค</label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>   
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชื่อผู้ประสานงาน
+                                                        </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>
+                                                    <div class="col-xl-2">
+                                                        <label for="">วันที่สิ้นสุดการรับประกัน </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>
+                                                    <div class="col"> 
+                                                        <label class="col-12">&nbsp; </label>
+                                                        <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                        </button> 
+                                                    </div> 
+                                                </div>
+                                            </div>
 
-                                    <div class="col-12 table-responsive" id="table-dex">
-                                       
+                                            <br>
+                                            <div class="col-12 table-responsive" id="table-dex">
+                                            
 
-                                        <table id="tb-job" class="table table-striped  " style="width:100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>ชื่ออุปกรณ์/ระบบ</th>  
-                                                    <th>ประเภท</th>  
-                                                    <th>โปรเจค</th>  
-                                                    <th>รหัสคุรุภัณฑ์</th>   
-                                                    <th>ผู้รับผิดชอบ</th>   
-                                                    <th>วันที่เริ่มต้นการรับประกัน</th>   
-                                                    <th>วันที่สิ้นสุดการรับประกัน</th>   
-                                                    <th>&nbsp;</th>
-                                                    <th>&nbsp;</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr> 
-                                                    <td>1</td>
-                                                    <td>Apple Air4</td> 
-                                                    <td>ฮาร์ดแวร์</td> 
-                                                    <td>โปรเจค A</td>  
-                                                    <td>ปส-123-112565</td>  
-                                                    <td>อดิศร ศรีสุธรรม</td>  
-                                                    <td>10/02/2566</td>
-                                                    <td>10/02/2566</td>
-                                                    <td>
-                                                        <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
-                                                    </td>  
-                                                    <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
-                                                        </a>  
-                                                    </td>
-                                                </tr>       
-                                                <tr> 
-                                                    <td>2</td>
-                                                    <td>OS for HR</td> 
-                                                    <td>ระบบบันทึกข้อมูลพนักงาน</td> 
-                                                    <td>โปรเจค A</td>  
-                                                    <td>ปส-123-112565</td> 
-                                                    <td>อดิศร ศรีสุธรรม</td> 
-                                                    <td>10/02/2566</td>
-                                                    <td>10/02/2566</td> 
-                                                    <td>
-                                                        <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
-                                                    </td>  
-                                                    <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
-                                                        </a>  
-                                                    </td>
-                                                </tr>  
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>Apple Air4</td> 
-                                                    <td>ฮาร์ดแวร์</td> 
-                                                    <td>โปรเจค A</td>  
-                                                    <td>ปส-123-112565</td> 
-                                                    <td>อดิศร ศรีสุธรรม</td>  
-                                                    <td>10/02/2566</td>
-                                                    <td>10/02/2566</td>
-                                                    <td>
-                                                        <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
-                                                    </td>  
-                                                    <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                   
-                                            </tbody> 
-                                        </table>
+                                                <table id="tb-job" class="table table-striped  " style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>ชื่ออุปกรณ์/ระบบ</th>  
+                                                            <th>ประเภท</th>  
+                                                            <th>โปรเจค</th>  
+                                                            <th>รหัสคุรุภัณฑ์</th>   
+                                                            <th>ผู้รับผิดชอบ</th>   
+                                                            <th>วันที่เริ่มต้นการรับประกัน</th>   
+                                                            <th>วันที่สิ้นสุดการรับประกัน</th>   
+                                                            <th>&nbsp;</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr> 
+                                                            <td>1</td>
+                                                            <td>Apple Air4</td> 
+                                                            <td>ฮาร์ดแวร์</td> 
+                                                            <td>โปรเจค A</td>  
+                                                            <td>ปส-123-112565</td>  
+                                                            <td>อดิศร ศรีสุธรรม</td>  
+                                                            <td>10/02/2566</td>
+                                                            <td>10/02/2566</td>
+                                                            <td>
+                                                                <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
+                                                            </td>  
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>  
+                                                            </td>
+                                                        </tr>       
+                                                        <tr> 
+                                                            <td>2</td>
+                                                            <td>OS for HR</td> 
+                                                            <td>ระบบบันทึกข้อมูลพนักงาน</td> 
+                                                            <td>โปรเจค A</td>  
+                                                            <td>ปส-123-112565</td> 
+                                                            <td>อดิศร ศรีสุธรรม</td> 
+                                                            <td>10/02/2566</td>
+                                                            <td>10/02/2566</td> 
+                                                            <td>
+                                                                <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
+                                                            </td>  
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>  
+                                                            </td>
+                                                        </tr>  
+                                                        <tr> 
+                                                            <td>3</td>
+                                                            <td>Apple Air4</td> 
+                                                            <td>ฮาร์ดแวร์</td> 
+                                                            <td>โปรเจค A</td>  
+                                                            <td>ปส-123-112565</td> 
+                                                            <td>อดิศร ศรีสุธรรม</td>  
+                                                            <td>10/02/2566</td>
+                                                            <td>10/02/2566</td>
+                                                            <td>
+                                                                <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
+                                                            </td>  
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                                    <i class="far fa-eye"></i>
+                                                                </a> 
+                                                            </td>
+                                                        </tr>                                   
+                                                    </tbody> 
+                                                </table>
+                                            </div>
+                                        </div> 
+                                        <div role="tabpanel" class="tab-pane fade " id="tab12">
+                                            <br>
+                                            <div class="col-12 search-label">
+                                                <div class="row">
+                                                    <div class="col-xl-2">
+                                                        <label for="">เลขครุภัณฑ์ </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div> 
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชื่ออุปกรณ์ </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>  
+                                                    <div class="col-xl-2">
+                                                        <label for="">ผู้จัดจำหน่าย </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>   
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชื่อผู้ประสานงาน
+                                                        </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>
+                                                    <div class="col-xl-2">
+                                                        <label for="">วันที่สิ้นสุดการรับประกัน </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>
+                                                    <div class="col"> 
+                                                        <label class="col-12">&nbsp; </label>
+                                                        <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                        </button> 
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <br>
+                                            <div class="col-12 table-responsive" id="table-dex">
+                                            
+
+                                                <table id="tb-job" class="table table-striped  " style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>ชื่ออุปกรณ์</th>  
+                                                            <th>โปรเจค</th>  
+                                                            <th>ผู้จัดจำหน่าย</th>  
+                                                            <th>ใบกำกับภาษี </th> 
+                                                            <th>รหัสคุรุภัณฑ์</th>   
+                                                            <th>ผู้รับผิดชอบ</th>   
+                                                            <th>วันที่เริ่มต้นการรับประกัน</th>   
+                                                            <th>วันที่สิ้นสุดการรับประกัน</th>   
+                                                            <th>&nbsp;</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr> 
+                                                            <td>1</td>
+                                                            <td>Apple Air4</td> 
+                                                            <td>โปรเจค A</td> 
+                                                            <td>Advice co.td</td>  
+                                                            <td>301000313</td>
+                                                            <td>ปส-123-112565</td>  
+                                                            <td>อดิศร ศรีสุธรรม</td>  
+                                                            <td>10/02/2566</td>
+                                                            <td>10/02/2566</td>
+                                                            <td>
+                                                                <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
+                                                            </td>  
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>  
+                                                            </td>
+                                                        </tr>                                  
+                                                    </tbody> 
+                                                </table>
+                                            </div>
+                                        </div> 
                                     </div>
                                 </div> 
+                                <div role="tabpanel" class="tab-pane fade  " id="tab2">
+                                    <br>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active text-success" href="#tab21" role="tab" data-toggle="tab">ส่วนการขายสินค้า</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-danger" href="#tab22" role="tab" data-toggle="tab">ส่วนการซื้อสินค้า</a>
+                                        </li> 
+                                    </ul> 
+
+                                    <br>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade show active" id="tab21">
+
+                                            <div class="col-12 search-label">
+                                                <div class="row"> 
+                                                    <div class="col-xl-2">
+                                                        <label for="">ระบบ </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>  
+                                                    <div class="col-xl-2">
+                                                        <label for="">โปรเจค</label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>   
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชื่อผู้ดูแล
+                                                        </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>
+                                                    <div class="col"> 
+                                                        <label class="col-12">&nbsp; </label>
+                                                        <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                        </button> 
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <br>
+
+                                            <div class="col-12 table-responsive" id="table-dex">
+                                            
+
+                                                <table id="tb-job" class="table table-striped  " style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>ระบบ</th>   
+                                                            <th>โปรเจค</th>  
+                                                            <th>หน่วยงาน</th>   
+                                                            <th>ผู้รับผิดชอบ</th>   
+                                                            <th>วันที่เริ่มต้นการรับประกัน</th>   
+                                                            <th>วันที่สิ้นสุดการรับประกัน</th>   
+                                                            <th>&nbsp;</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr> 
+                                                            <td>1</td>
+                                                            <td>SSO HR Network</td>  
+                                                            <td>โปรเจค A</td>  
+                                                            <td>หน่วยงาน A</td>  
+                                                            <td>อดิศร ศรีสุธรรม</td>  
+                                                            <td>10/02/2566</td>
+                                                            <td>10/02/2566</td>
+                                                            <td>
+                                                                <img src="images/retail-pos-software-500x500.webp" class="img-obj" alt="">
+                                                            </td>  
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>  
+                                                            </td>
+                                                        </tr>                                     
+                                                    </tbody> 
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade " id="tab22">
+
+                                            <div class="col-12 search-label">
+                                                <div class="row"> 
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชิ้่อระบบ </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>  
+                                                    <div class="col-xl-2">
+                                                        <label for="">โปรเจค</label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>   
+                                                    <div class="col-xl-2">
+                                                        <label for="">ชื่อผู้ดูแล </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>  
+                                                    <div class="col-xl-2">
+                                                        <label for="">บริษัทผู้พัฒนา </label>
+                                                        <input type="text" class="form-control"  >
+                                                    </div>
+                                                    <div class="col"> 
+                                                        <label class="col-12">&nbsp; </label>
+                                                        <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                                        </button> 
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <br>
+
+                                            <div class="col-12 table-responsive" id="table-dex">
+                                            
+
+                                                <table id="tb-job" class="table table-striped  " style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>ระบบ</th>   
+                                                            <th>โปรเจค</th>  
+                                                            <th>บริษัทผู้พัฒนา </th> 
+                                                            <th>สถานที่ติดตั้ง </th>   
+                                                            <th>ผู้รับผิดชอบ</th>   
+                                                            <th>วันที่เริ่มต้นการรับประกัน</th>   
+                                                            <th>วันที่สิ้นสุดการรับประกัน</th>   
+                                                            <th>&nbsp;</th>
+                                                            <th>&nbsp;</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr> 
+                                                            <td>1</td>
+                                                            <td>Apple Air4</td>  
+                                                            <td>โปรเจค A</td>  
+                                                            <td>Java corporation</td>  
+                                                            <td>นนทบุรี</td>  
+                                                            <td>อดิศร ศรีสุธรรม</td>  
+                                                            <td>10/02/2566</td>
+                                                            <td>10/02/2566</td>
+                                                            <td>
+                                                                <img src="images/retail-pos-software-500x500.webp" class="img-obj" alt="">
+                                                            </td>  
+                                                            <td>
+                                                                <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                                    <i class="far fa-eye"></i>
+                                                                </a>  
+                                                            </td>
+                                                        </tr>                                 
+                                                    </tbody> 
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>       
                         </div>
                     </div> 
