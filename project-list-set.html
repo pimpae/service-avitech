@@ -75,7 +75,7 @@
                     <nav class="mt-2">
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link">
+                                <a href="index.html" class="nav-link ">
                                     <i class="nav-icon far fa-chart-line"></i> 
                                     <p>Dashboard</p>
                                 </a> 
@@ -93,7 +93,7 @@
                                 </a> 
                             </li>   
                             <li class="nav-item">
-                                <a href="project-list.html" class="nav-link ">
+                                <a href="project-list.html" class="nav-link  ">
                                     <i class="nav-icon fal fa-tasks-alt"></i>
                                     <p>โปรเจค</p>
                                 </a> 
@@ -103,13 +103,13 @@
                                     <i class="nav-icon fas fa-laptop"></i>
                                     <p>อุปกรณ์ / ระบบ</p>
                                 </a> 
-                            </li>    
+                            </li>   
                             <li class="nav-item">
-                                <a href="user-list.html" class="nav-link active">
+                                <a href="user-list.html" class="nav-link ">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>ผู้ใช้งาน</p>
                                 </a> 
-                            </li>  
+                            </li>   
                             <li class="nav-item">
                                 <a href="report-list.html" class="nav-link ">
                                     <i class="nav-icon fal fa-file-alt"></i>
@@ -120,7 +120,7 @@
 
 
                             
-                            <li class="nav-item ">
+                            <li class="nav-item menu-is-opening menu-open">
                                 <a href="#" class="nav-link"> 
                                     <i class="nav-icon far fa-cog"></i>
                                     <p>
@@ -136,13 +136,13 @@
                                         </a>
                                     </li>   
                                     <li class="nav-item">
-                                        <a href="project-list-set.html" class="nav-link ">
+                                        <a href="project-list-set.html" class="nav-link active">
                                             <i class="far fa-hotel"></i>
                                             <p>ตั้งค่าโปรเจค</p>
                                         </a>
                                     </li>   
                                     <li class="nav-item">
-                                        <a href="equipment-list-set.html" class="nav-link  ">
+                                        <a href="equipment-list-set.html" class="nav-link">
                                             <i class="far fa-phone-laptop"></i>
                                             <p>ตั้งค่าอุปกรณ์ / ระบบ</p>
                                         </a>
@@ -165,8 +165,8 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <h1 class="m-0">
-                                    <strong>ชื่อผู้ใช้งาน</strong>   
-                                    <!-- <a href="user-form-add.html" class="btn btn-primary float-right"> เพิ่ม User</a> -->
+                                    <strong>โปรเจค</strong>   
+                                    <a href="project-form-add.html" class="btn btn-primary"> สร้างโปรเจค</a>
                                 </h1> 
                             </div>  
                         </div> 
@@ -183,31 +183,11 @@
                                     <div class="col-12 search-label">
                                         <div class="row">
                                             <div class="col-xl-2">
-                                                <label for="">ชื่อผู้ใช้งาน</label>
+                                                <label for="">ชื่อโปรเจค</label>
                                                 <input type="text" class="form-control"  >
                                             </div> 
                                             <div class="col-xl-2">
-                                                <label for="">ตำแหน่ง</label>
-                                                <select class="selectpicker w-100" title="ตำแหน่ง " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>ตำแหน่ง 1</option>
-                                                    <option>ตำแหน่ง 2</option>
-                                                    <option>ตำแหน่ง 3</option>
-                                                    <option>ตำแหน่ง 4</option>
-                                                    <option>ตำแหน่ง 5</option>
-                                                </select>
-                                            </div> 
-                                            <div class="col-xl-2">
                                                 <label for="">หน่วยงาน</label>
-                                                <select class="selectpicker w-100" title="หน่วยงาน " data-show-subtext="true" data-live-search="true" name="sel2"  id="sel2">  
-                                                    <option>หน่วยงาน 1</option>
-                                                    <option>หน่วยงาน 2</option>
-                                                    <option>หน่วยงาน 3</option>
-                                                    <option>หน่วยงาน 4</option>
-                                                    <option>หน่วยงาน 5</option>
-                                                </select>
-                                            </div> 
-                                            <div class="col-xl-2">
-                                                <label for="">วันที่เพิ่ม	</label>
                                                 <input type="text" class="form-control"  >
                                             </div>   
                                             <div class="col"> 
@@ -227,12 +207,9 @@
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
+                                                    <th>ชื่อโปรเจค</th> 
                                                     <th>หน่วยงาน</th> 
-                                                    <th>โปรเจค</th> 
-                                                    <th>ชื่อ นามสกุล</th> 
-                                                    <th>ตำแหน่ง</th>   
-                                                    <th>วันที่เพิ่ม</th>  
-                                                    <th>รูป</th>
+                                                    <th>วันที่สร้าง</th>  
                                                     <th>การใช้งาน</th>
                                                     <th>&nbsp;</th>
                                                 </tr>
@@ -240,14 +217,9 @@
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>หน่วยงาน</td>
-                                                    <td>โปรเจค</td>
-                                                    <td>อดิศร ศรีสุธรรม</td>  
-                                                    <td>ห้วหน้าแผนก</td> 
+                                                    <td>โปรเจค</td> 
+                                                    <td>หน่วยงาน</td> 
                                                     <td>10/02/2566</td> 
-                                                    <td>
-                                                        <img src="images/user8-128x128.jpg" class="img-obj" alt="">
-                                                    </td>  
                                                     <td>
                                                         <div class="custom-control custom-switch c1">
                                                             <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
@@ -255,55 +227,11 @@
                                                         </div> 
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
+                                                        <a href="#" class="btn btn-danger btn-sm pt-2" >
+                                                            <i class="far fa-edit"></i>
                                                         </a> 
                                                     </td>
-                                                </tr>     
-                                                <tr> 
-                                                    <td>2</td>
-                                                    <td>หน่วยงาน</td>
-                                                    <td>โปรเจค</td>
-                                                    <td>อดิศร ศรีสุธรรม</td>  
-                                                    <td>ห้วหน้าแผนก</td> 
-                                                    <td>10/02/2566</td> 
-                                                    <td>
-                                                        <img src="images/user2-160x160.jpg" class="img-obj" alt="">
-                                                    </td>  
-                                                    <td>
-                                                        <div class="custom-control custom-switch c1">
-                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                                                            <label class="custom-control-label" for="customSwitch1"></label>
-                                                        </div> 
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>   
-                                                <tr> 
-                                                    <td>3</td>
-                                                    <td>หน่วยงาน</td>
-                                                    <td>โปรเจค</td>
-                                                    <td>อดิศร ศรีสุธรรม</td>  
-                                                    <td>ห้วหน้าแผนก</td> 
-                                                    <td>10/02/2566</td> 
-                                                    <td>
-                                                        <img src="images/user7-128x128.jpg" class="img-obj" alt="">
-                                                    </td>  
-                                                    <td>
-                                                        <div class="custom-control custom-switch c1">
-                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                                                            <label class="custom-control-label" for="customSwitch1"></label>
-                                                        </div> 
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
-                                                            <i class="far fa-eye"></i>
-                                                        </a> 
-                                                    </td>
-                                                </tr>                                           
+                                                </tr>                                             
                                             </tbody> 
                                         </table>
                                     </div>
