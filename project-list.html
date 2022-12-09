@@ -190,6 +190,10 @@
                                                 <label for="">หน่วยงาน</label>
                                                 <input type="text" class="form-control"  >
                                             </div>   
+                                            <div class="col-xl-2">
+                                                <label for="">เลขที่สัญญา</label>
+                                                <input type="text" class="form-control"  >
+                                            </div>   
                                             <div class="col"> 
                                                 <label class="col-12">&nbsp; </label>
                                                 <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
@@ -200,16 +204,17 @@
 
                                     <br>
 
-                                    <div class="col-12 table-responsive" id="table-dex">
-                                       
-
+                                    <div class="col-12 table-responsive" id="table-dex"> 
                                         <table id="tb-job" class="table table-striped  " style="width:100%">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
+                                                    <th>ชื่อหน่วยงาน</th> 
                                                     <th>ชื่อโครงการ</th> 
-                                                    <th>หน่วยงาน</th> 
-                                                    <th>วันที่สร้าง</th>  
+                                                    <th>เลขที่สัญญา</th> 
+                                                    <th>มูลค่าโครงการ</th>  
+                                                    <th>วันที่ตรวจรับงาน</th>  
+                                                    <th>วันที่สิ้นสุดสัญญา</th>  
                                                     <th>การใช้งาน</th>
                                                     <th>&nbsp;</th>
                                                 </tr>
@@ -217,9 +222,12 @@
                                             <tbody>
                                                 <tr> 
                                                     <td>1</td>
-                                                    <td>โครงการ</td> 
-                                                    <td>หน่วยงาน</td> 
-                                                    <td>10/02/2566</td> 
+                                                    <td>ประกันสังคม</td> 
+                                                    <td>โครงการจัดซื้อจัดจ้าง ชุดคอมพิวเตอร์</td>  
+                                                    <td>SS0-2939-2566</td>
+                                                    <td>1,050,000 บาท</td>
+                                                    <td>10/02/2565</td>
+                                                    <td>10/02/2566</td>
                                                     <td>
                                                         <div class="custom-control custom-switch c1">
                                                             <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
@@ -231,7 +239,27 @@
                                                             <i class="far fa-eye"></i>
                                                         </a> 
                                                     </td>
-                                                </tr>                                             
+                                                </tr>        
+                                                <tr> 
+                                                    <td>2</td>
+                                                    <td>มหาวิทยาลัยศรีนครินทรวิโรฒ</td> 
+                                                    <td>โครงการพัฒนาระบบ</td>  
+                                                    <td>SWU-2939-2566</td>
+                                                    <td>50,000,000 บาท</td>
+                                                    <td>10/02/2565</td>
+                                                    <td>10/02/2566</td>
+                                                    <td>
+                                                        <div class="custom-control custom-switch c1">
+                                                            <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                                            <label class="custom-control-label" for="customSwitch1"></label>
+                                                        </div> 
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-info btn-sm pt-2" >
+                                                            <i class="far fa-eye"></i>
+                                                        </a> 
+                                                    </td>
+                                                </tr>                                          
                                             </tbody> 
                                         </table>
                                     </div>
