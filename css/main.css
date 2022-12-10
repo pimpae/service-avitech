@@ -613,5 +613,5 @@ table td{
 
 .form-control:disabled, .form-control[readonly] {
   background-color: #fff;
-  color: #60B9D4;
+  color: #000;
 }
