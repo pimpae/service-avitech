@@ -43,14 +43,35 @@ body{
   font-family: THSarabunNew;
 } 
 .sidebar-dark-primary{
-  background: #4a78a9;
+  background: url(../images/ccc.png) ,   linear-gradient(to bottom, #008bd2, #0093d6, #009bd9, #00a3db, #00abdd);
+  /* linear-gradient(to bottom, #0f60b6, #0673c7, #0886d6, #1599e5, #27acf3) */ 
+  background-repeat: no-repeat , no-repeat  !important;
+  background-size: 200% auto , 100% ;
+  background-position:  left bottom , center ;
 }
 .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
-  background: #91a3b0;
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+  overflow: hidden;
+} 
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active:after, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active:after {
+  content: "";
+  position: absolute;
+  width: 195.41px;
+  height: 49.86px;
+  left: 57px;
+  top: 25px;
+  background: rgba(39, 172, 243, .1);
+  transform: rotate(-15deg);
 }
 [class*=sidebar-dark-] .sidebar a {
   color: #fff;
 }
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link {
+  color: #fff;
+}
+
 
 .navbar-expand-lg{
   justify-content: space-between !important;
@@ -606,6 +627,11 @@ table td{
   background-color: #F8CCCB;
 } 
 .date + i{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.icon-right + i{
   position: absolute;
   top: 10px;
   right: 20px;

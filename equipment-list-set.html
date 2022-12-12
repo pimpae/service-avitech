@@ -166,8 +166,8 @@
                             <div class="col-xl-6">
                                 <h1 class="m-0">
                                     <strong>อุปกรณ์/ระบบ</strong>   
-                                    <a href="equipment-form-add.html" class="btn btn-primary"> เพิ่ม อุปกรณ์/ระบบ</a>
-                                    <a href="equipment-form-add2.html" class="btn btn-success"> <i class="far fa-file-excel"></i> นำเข้าอุปกรณ์จากไฟล์ </a>
+                                    <!-- <a href="equipment-form-add.html" class="btn btn-primary"> เพิ่ม</a> -->
+                                    <!-- <a href="equipment-form-add2.html" class="btn btn-success"> <i class="far fa-file-excel"></i> นำเข้าอุปกรณ์จากไฟล์ </a> -->
                                 </h1> 
                             </div>   
                         </div> 
@@ -176,13 +176,45 @@
                 <section class="content">
                     <div class="container-fluid">
                         <div class="div-box card-outline card-info p-4">
-                 
+                            
+
+                            <div class="col-12 search-label">
+                                <div class="row">
+                                    <div class="col-xl-2">
+                                        <label for="">หน่วยงาน</label>
+                                        <select class="selectpicker w-100" title="หน่วยงาน" data-show-subtext="true" data-live-search="true" name="agent_active"  id="agent_active">  
+                                            <option value="1">สำนักงานประกันสังคม</option>
+                                            <option value="1">กระทรวงการคลัง</option>
+                                            <option value="1">กระทรวงสาธารณสุข</option>
+                                            <option value="1">มหาวิทยาลัยเกษตรศาสตร์</option> 
+                                        </select>
+                                    </div>   
+                                    <div class="col-xl-2">
+                                        <label for="">ชื่อโครงการ</label>
+                                        <select class="selectpicker w-100" title="โครงการ" data-show-subtext="true" data-live-search="true" name="agent_active"  id="agent_active">  
+                                            <option value="1">ชื่อโครงการ</option>
+                                            <option value="1">ชื่อโครงการ</option>
+                                            <option value="1">ชื่อโครงการ</option>
+                                            <option value="1">ชื่อโครงการ</option> 
+                                        </select>
+                                    </div> 
+                                    <div class="col"> 
+                                        <label class="col-12">&nbsp; </label>
+                                        <button class="btn btn-info btn-sm pt-2 ">  <i class="far fa-search"></i> ค้นหา
+                                        </button> 
+                                    </div> 
+                                </div>
+                            </div>
+                            <br>
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab">อุปกรณ์</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#tab2" role="tab" data-toggle="tab">ระบบ</a>
+                                </li> 
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tab3" role="tab" data-toggle="tab">วัสดุ</a>
                                 </li> 
                             </ul> 
 
@@ -191,14 +223,14 @@
                                 <div role="tabpanel" class="tab-pane fade show active" id="tab1">
                                     
                                     <br>
-                                    <ul class="nav nav-tabs" role="tablist">
+                                    <!-- <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item">
                                             <a class="nav-link active text-success" href="#tab11" role="tab" data-toggle="tab">ส่วนการขายสินค้า</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-danger" href="#tab12" role="tab" data-toggle="tab">ส่วนการซื้อสินค้า</a>
                                         </li> 
-                                    </ul> 
+                                    </ul>  -->
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane fade show active" id="tab11">
                                             <br>
@@ -241,10 +273,10 @@
                                                     <thead>
                                                         <tr>
                                                             <th>#</th>
-                                                            <th>ชื่ออุปกรณ์/ระบบ</th>  
-                                                            <th>ประเภท</th>  
-                                                            <th>โครงการ</th>  
-                                                            <th>รหัสคุรุภัณฑ์</th>   
+                                                            <th>เลขครุภัณฑ์</th>
+                                                            <th>S/N</th>
+                                                            <th>ชื่ออุปกรณ์/ระบบ</th>    
+                                                            <th>ประเภท</th>   
                                                             <th>ผู้รับผิดชอบ</th>   
                                                             <th>วันที่เริ่มต้นการรับประกัน</th>   
                                                             <th>วันที่สิ้นสุดการรับประกัน</th>   
@@ -255,10 +287,10 @@
                                                     <tbody>
                                                         <tr> 
                                                             <td>1</td>
+                                                            <td>คค 838490/2565</td>
+                                                            <td>AC-2388-9008-941</td>
                                                             <td>Apple Air4</td> 
-                                                            <td>ฮาร์ดแวร์</td> 
-                                                            <td>โครงการ A</td>  
-                                                            <td>ปส-123-112565</td>  
+                                                            <td>ฮาร์ดแวร์</td>   
                                                             <td>อดิศร ศรีสุธรรม</td>  
                                                             <td>10/02/2566</td>
                                                             <td>10/02/2566</td>
@@ -266,17 +298,17 @@
                                                                 <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
                                                             </td>  
                                                             <td>
-                                                                <a href="#" class="btn btn-danger btn-sm pt-2" >
+                                                                <a href="#" class="btn btn-primary btn-sm pt-2" >
                                                                     <i class="far fa-edit"></i>
                                                                 </a>  
                                                             </td>
                                                         </tr>       
                                                         <tr> 
                                                             <td>2</td>
+                                                            <td>คค 838490/2565</td>
+                                                            <td>AC-2388-9008-941</td>
                                                             <td>OS for HR</td> 
-                                                            <td>ระบบบันทึกข้อมูลพนักงาน</td> 
-                                                            <td>โครงการ A</td>  
-                                                            <td>ปส-123-112565</td> 
+                                                            <td>ระบบบันทึกข้อมูลพนักงาน</td>   
                                                             <td>อดิศร ศรีสุธรรม</td> 
                                                             <td>10/02/2566</td>
                                                             <td>10/02/2566</td> 
@@ -284,17 +316,17 @@
                                                                 <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
                                                             </td>  
                                                             <td>
-                                                                <a href="#" class="btn btn-danger btn-sm pt-2" >
+                                                                <a href="#" class="btn btn-primary btn-sm pt-2" >
                                                                     <i class="far fa-edit"></i>
                                                                 </a>  
                                                             </td>
                                                         </tr>  
                                                         <tr> 
                                                             <td>3</td>
+                                                            <td>คค 838490/2565</td>
+                                                            <td>AC-2388-9008-941</td>
                                                             <td>Apple Air4</td> 
-                                                            <td>ฮาร์ดแวร์</td> 
-                                                            <td>โครงการ A</td>  
-                                                            <td>ปส-123-112565</td> 
+                                                            <td>ฮาร์ดแวร์</td>   
                                                             <td>อดิศร ศรีสุธรรม</td>  
                                                             <td>10/02/2566</td>
                                                             <td>10/02/2566</td>
@@ -302,7 +334,7 @@
                                                                 <img src="images/th-ipad_air_wi-fi_10.9_in_space_gray_3.jpg" class="img-obj" alt="">
                                                             </td>  
                                                             <td>
-                                                                <a href="#" class="btn btn-danger btn-sm pt-2" >
+                                                                <a href="#" class="btn btn-primary btn-sm pt-2" >
                                                                     <i class="far fa-edit"></i>
                                                                 </a> 
                                                             </td>
