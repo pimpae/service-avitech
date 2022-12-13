@@ -177,22 +177,22 @@
                   
                             <div class="col">
                                 <div class="row justify-content-center"> 
-                                    <div class="col-xl-8 col-lg-12 col-12">
+                                    <div class="col-xl-12 col-lg-12 col-12">
 
                                         <div class="form-group row mb-0">
-                                            <div class="col-xl-3">
+                                            <div class="col-xl-2">
                                                 <label class="h3">หน่วยงาน</label> 
                                             </div>  
-                                            <div class="col-xl-5">
+                                            <div class="col-xl-4">
                                                 <label class="h3">สำนักงานประกันสังคม</label> 
                                             </div> 
                                         </div>
 
                                         <div class="form-group row mb-0">
-                                            <div class="col-xl-3">
+                                            <div class="col-xl-2">
                                                 <label class="h3">โครงการ</label> 
                                             </div>  
-                                            <div class="col-xl-5">
+                                            <div class="col-xl-4">
                                                 <label class="h3">โครงการจัดซื้อจัดจ้าง คอมพิวเตอร์</label> 
                                             </div> 
                                         </div>
@@ -213,10 +213,10 @@
                                                 <form>
                                                     <br>
                                                     <div class="form-group row mb-0">
-                                                        <div class="col-xl-3">
+                                                        <div class="col-xl-2">
                                                             <label for="">ประเภท</label> 
                                                         </div>  
-                                                        <div class="col-xl-9"> 
+                                                        <div class="col-xl-6"> 
                                                             <div class="row "> 
                                                                 <div class="col-xl-3">
                                                                     <div class="form-group user_typex"> 
@@ -249,162 +249,195 @@
                                                             </div>
                                                         </div> 
                                                     </div>
-
-                                                    
                                                    
 
                                                     <div class="form-group row">
-                                                        <div class="col-xl-3">
+                                                        <div class="col-xl-2">
                                                             <label for="">ชื่อรายการ
                                                             </label> 
                                                         </div>  
-                                                        <div class="col-xl-6"> 
+                                                        <div class="col-xl-3"> 
                                                             <input type="text" class="form-control"  value="">
                                                         </div> 
                                                     </div>  
 
-                                                    <div class="form-group row mb-0">
-                                                        <div class="col-xl-2">
-                                                            <label for="">ยี่ห้อ</label>  
-                                                        </div>  
-                                                        <div class="col-xl-2">
-                                                            <label for="">รุ่น</label>  
-                                                        </div>   
-                                                        <div class="col-xl-2">
-                                                            <label for="">จำนวน</label>  
-                                                        </div>     
-                                                        <div class="col-xl-2">
-                                                            <label for="">หน่วยนับ</label>  
-                                                        </div>     
-                                                        <div class="col-xl-2">
-                                                            <label for="">เลขครุภัณฑ์</label>  
-                                                        </div>     
+                                                    
+                                                    <div class="row"> 
+                                                        <div class="col-xl-6">
+                                                            <div class="form-group row mb-0">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">ยี่ห้อ</label>  
+                                                                </div>  
+                                                                <div class="col-xl-3">
+                                                                    <label for="">รุ่น</label>  
+                                                                </div>   
+                                                                <div class="col-xl-2">
+                                                                    <label for="">จำนวน</label>  
+                                                                </div>     
+                                                                <div class="col-xl-3">
+                                                                    <label for="">หน่วยนับ</label>  
+                                                                </div>      
+                                                            </div>
+        
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control"  value="">
+                                                                </div>   
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control"  value="">
+                                                                </div>   
+                                                                <div class="col-xl-2"> 
+                                                                    <input type="number" class="form-control" min="1" max="999"  value="">
+                                                                </div>    
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control"  value="">
+                                                                </div>   
+                                                                <div class="col-xl-1">  
+                                                                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModalx"><i class="fal fa-plus"></i></button>
+                                                                </div>   
+                                                            </div>
+
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-4">
+                                                                    <label for="">วันที่เริ่มต้นการรับประกันตามสัญญา</label> 
+                                                                </div>  
+                                                                <div class="col-xl-6"> 
+                                                                    <input type="text" class="form-control date" value="12/01/2023"  > 
+                                                                </div> 
+                                                            </div>    
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-4">
+                                                                    <label for="">ระยะเวลาการรับประกันตามสัญญา</label> 
+                                                                </div>  
+                                                                <div class="col-xl-2"> 
+                                                                    <input type="text" class="form-control numberonly" name="year" id="year"  value=""> 
+                                                                </div> 
+                                                                <span class="h5" style="line-height: 40px;">ปี</span>
+                                                                <div class="col-xl-2"> 
+                                                                    <input type="text" class="form-control numberonly" name="day" id="day"  value=""> 
+                                                                </div> 
+                                                                <span class="h5" style="line-height: 40px;">วัน</span>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-4">
+                                                                    <label for="">วันที่สิ้นสุดการรับประกันตามรายการ</label> 
+                                                                </div>  
+                                                                <div class="col-xl-4"> 
+                                                                    <input type="text" class="form-control date" id="end_pro" name="end_pro"  value="" disabled>
+                                                                    <i class="far fa-calendar-alt"></i>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-12">
+                                                                    <label for="">รายละเอียดการรับประกันตามรายการ</label> 
+                                                                </div>  
+                                                                <div class="col-xl-12"> 
+                                                                    <textarea name="" class="form-control" rows="2"></textarea>
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">เลขครุภัณฑ์</label> 
+                                                                </div>  
+                                                                <div class="col-xl-7"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div>  
+                                                            </div> 
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">สถานที่ติดตั้ง</label> 
+                                                                </div> 
+                                                                <div class="col-xl-1">
+                                                                    <label for="" style="white-space: nowrap;">หน่วยงาน</label> 
+                                                                </div> 
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                                <div class="col-xl-1">
+                                                                    <label for="" style="white-space: nowrap;">สังกัด</label> 
+                                                                </div>  
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                            </div> 
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">อาคาร</label> 
+                                                                </div>  
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                                <div class="col-xl-1">
+                                                                    <label for="" class="text-right">ชั้น</label> 
+                                                                </div>  
+                                                                <div class="col-xl-2"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                                <div class="col-xl-1">
+                                                                    <label for="" class="text-right">ห้อง</label> 
+                                                                </div>  
+                                                                <div class="col-xl-2"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                            </div> 
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label style="white-space: nowrap;">ผู้รับผิดชอบ/ผู้ครอบครองอุปกรณ์ </label> 
+                                                                </div>  
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                                <div class="col-xl-1">
+                                                                    <label for="">ตำแหน่ง</label> 
+                                                                </div>  
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                            </div> 
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">เบอร์โทร</label> 
+                                                                </div>  
+                                                                <div class="col-xl-3"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                                <div class="col-xl-1">
+                                                                    <label for="">เบอร์ต่อ</label> 
+                                                                </div>  
+                                                                <div class="col-xl-2"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                            </div> 
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">มือถือ</label> 
+                                                                </div>  
+                                                                <div class="col-xl-5"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <div class="col-xl-3">
+                                                                    <label for="">อีเมล</label> 
+                                                                </div>  
+                                                                <div class="col-xl-5"> 
+                                                                    <input type="text" class="form-control" value=""> 
+                                                                </div> 
+                                                            </div>
+                                                        </div>
                                                     </div>
 
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control"  value="">
-                                                        </div>   
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control"  value="">
-                                                        </div>   
-                                                        <div class="col-xl-2"> 
-                                                            <input type="number" class="form-control" min="1" max="999"  value="">
-                                                        </div>    
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control"  value="">
-                                                        </div>  
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control"  value="">
-                                                        </div>     
-                                                        <div class="col-xl-1">  
-                                                            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModalx"><i class="fal fa-plus"></i></button>
-                                                        </div>   
-                                                    </div>
+                                                    
 
                                                     <hr>
 
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">วันที่เริ่มต้นการรับประกันตามสัญญา</label> 
-                                                        </div>  
-                                                        <div class="col-xl-5"> 
-                                                            <input type="text" class="form-control date" value="12/01/2023"  > 
-                                                        </div> 
-                                                    </div>    
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">ระยะเวลาการรับประกันตามสัญญา</label> 
-                                                        </div>  
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control numberonly" name="year" id="year"  value=""> 
-                                                        </div> 
-                                                        <span class="h5" style="line-height: 40px;">ปี</span>
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control numberonly" name="day" id="day"  value=""> 
-                                                        </div> 
-                                                        <span class="h5" style="line-height: 40px;">วัน</span>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">วันที่สิ้นสุดการรับประกันตามรายการ</label> 
-                                                        </div>  
-                                                        <div class="col-xl-5"> 
-                                                            <input type="text" class="form-control date" id="end_pro" name="end_pro"  value="" disabled>
-                                                            <i class="far fa-calendar-alt"></i>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-12">
-                                                            <label for="">รายละเอียดการรับประกันตามรายการ</label> 
-                                                        </div>  
-                                                        <div class="col-xl-12"> 
-                                                            <textarea name="" class="form-control" rows="10"></textarea>
-                                                        </div> 
-                                                    </div>
+                                                    
 
                                                     <hr>
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">สถานที่ตั้ง</label> 
-                                                        </div> 
-                                                        <div class="col-xl-1">
-                                                            <label for="">หน่วยงาน</label> 
-                                                        </div> 
-                                                        <div class="col-xl-2"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                        <div class="col-xl-1">
-                                                            <label for="">สังกัด</label> 
-                                                        </div>  
-                                                        <div class="col-xl-3"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                    </div> 
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">ผู้รับผิดชอบ</label> 
-                                                        </div>  
-                                                        <div class="col-xl-3"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                        <div class="col-xl-1">
-                                                            <label for="">ตำแหน่ง</label> 
-                                                        </div>  
-                                                        <div class="col-xl-3"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                    </div> 
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">เบอร์โทร</label> 
-                                                        </div>  
-                                                        <div class="col-xl-3"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                        <div class="col-xl-1">
-                                                            <label for="">เบอร์ต่อ</label> 
-                                                        </div>  
-                                                        <div class="col-xl-1"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                    </div> 
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">มือถือ</label> 
-                                                        </div>  
-                                                        <div class="col-xl-5"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-xl-3">
-                                                            <label for="">อีเมล</label> 
-                                                        </div>  
-                                                        <div class="col-xl-5"> 
-                                                            <input type="text" class="form-control" value=""> 
-                                                        </div> 
-                                                    </div>
+                                                    
+                                                    
                                                     <div class="form-group row">
                                                         <div class="col-xl-3">
                                                             <label for="">อัพโหลด</label> 
