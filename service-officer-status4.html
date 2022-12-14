@@ -286,18 +286,38 @@
                                                             <label for="">วันที่ซ่อมสำเร็จ</label> 
                                                         </div>  
                                                         <div class="col-xl-6"> 
-                                                            <input type="text" class="form-control date"   value="">
-                                                            <i class="far fa-calendar-alt"></i>
+                                                            <label for="">20/02/2566</label> 
                                                         </div> 
-                                                    </div>  
+                                                    </div>   
+                                                    
+                                                    <h4><strong>บันทึกรับเงิน</strong></h4> 
+                                                    
                                                     <div class="form-group row">
                                                         <div class="col-xl-3">
-                                                            <label for="">หมายเหตุ</label> 
+                                                            <label for="">เลขที่ใบเสร็จรับเงิน</label> 
                                                         </div>  
-                                                        <div class="col-xl-6"> 
-                                                            <textarea class="form-control" name="" rows="4"></textarea>
+                                                        <div class="col-xl-6">  
+                                                            <input type="text" class="form-control">
                                                         </div> 
                                                     </div>  
+
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">แนบใบเสร็จรับเงิน</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6">  
+                                                            <div class="input-group">
+                                                                <span class="input-group-btn">
+                                                                    <span class="btn btn-default btn-file">
+                                                                        Browse… <input type="file" id="imgInp">
+                                                                    </span>
+                                                                </span>
+                                                                <input type="text" class="form-control" readonly>
+                                                            </div>
+                                                            <img id='img-upload'/>
+                                                        </div> 
+                                                    </div>  
+                                                    
                                                     <div class="col-xl-9">  
                                                         <button class="btn btn-success">บันทึก</button>
                                                     </div> 
