@@ -117,7 +117,9 @@
                             <div class="col">
                                 <div class="row"> 
                                     <div class="col-xl-6 col-lg-12 col-12">   
-                                        <h4 class="border-bottom pb-2 mb-3 font-weight-bold">รายละเอียดการซ่อม</h4>
+                                        <h4 class="border-bottom pb-2 mb-3 font-weight-bold">
+                                            รายละเอียดการซ่อม
+                                        </h4>
                                         
                                         <div class="form-group row mb-0">
                                             <div class="col-xl-4">
@@ -211,7 +213,7 @@
                                     </div>
                                     <div class="col-xl-12">  
                                         <div class="form-group row mb-0">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 pr-5">
                                                 <label for="">รายละเอียดการรับประกัน</label> 
                                     
                                                 <label for="">
@@ -231,20 +233,20 @@
                                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, similique possimus minima dolorum iste tempora voluptate voluptatibus. Velit labore exercitationem distinctio voluptatem optio quae praesentium aspernatur quo repellendus, explicabo repudiandae?
                                                     </li>
                                                 </ol>
-                                            </div>  
-
+                                            </div> 
+                                
                                             <div class="col-xl-6">
                                                 <form>
                                                     <div class="form-group row mb-0"> 
-                                                        <div class="col-xl-6">
+                                                        <div class="col-xl-12">
                                                             <div class="form-group row">
                                                                 <div class="custom-control custom-radio ml-2">
-                                                                    <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1" checked disabled>
-                                                                    <label for="customRadio1" class="custom-control-label text-success">อยู่ในเงื่อนไขการรับประกัน </label>
+                                                                    <input class="custom-control-input" type="radio" id="customRadio1" name="customRadio" value="radio1" disabled>
+                                                                    <label for="customRadio1" class="custom-control-label">อยู่ในเงื่อนไขการรับประกัน </label>
                                                                 </div>
                                                                 <div class="custom-control custom-radio ml-5">
-                                                                    <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2" disabled>
-                                                                    <label for="customRadio2" class="custom-control-label text-danger">ไม่อยู่ในเงื่อนไขการรับประกัน</label>
+                                                                    <input class="custom-control-input" type="radio" id="customRadio2" name="customRadio" value="radio2" checked disabled>
+                                                                    <label for="customRadio2" class="custom-control-label">ไม่อยู่ในเงื่อนไขการรับประกัน</label>
                                                                 </div> 
                                                             </div> 
                                                         </div>
@@ -254,23 +256,60 @@
                                                         <label>หมายเหตุ</label> 
                                                     </div>  
                                                     <div class="col-xl-9"> 
-                                                        <label for="">อุปกรณ์ อยู่ในเงื่อนไขการรับประกัน</label> 
+                                                        <label>ไม่อยู่ในเงื่อนไขการรับประกัน</label> 
                                                     </div> 
+        
+                                                    <hr>
+        
+                                                    <div class="form-group">
+                                                        
+                                                        <a href="images/qu.pdf" target="_blank" class="btn btn-dark"><i class="far fa-file-alt"></i> ใบเสนอราคา</a>  
+                                                        <a href="#" target="_blank" class="btn btn-danger"><i class="far fa-file-alt"></i> ใบแจ้งหนี้</a>  
+                                                    </div>
+                                                    <div class="form-group row mb-0"> 
+                                                        <div class="col-xl-6">
+                                                            <div class="form-group row">
+                                                                <div class="custom-control custom-radio ml-2">
+                                                                    <input class="custom-control-input" type="radio" id="customRadio_x1" name="customRadio_x" value="radio1" checked disabled>
+                                                                    <label for="customRadio_x1" class="custom-control-label text-success">หน่วยงาน สั่งซ่อม  </label>
+                                                                </div>
+                                                                <div class="custom-control custom-radio ml-5">
+                                                                    <input class="custom-control-input" type="radio" id="customRadio_x2" name="customRadio_x" value="radio2" disabled>
+                                                                    <label for="customRadio_x2" class="custom-control-label text-danger">หน่วยงาน ไม่สั่งซ่อม </label>
+                                                                </div> 
+                                                            </div> 
+                                                        </div>
+                                                    </div> 
+        
+                                                    <div class="col-xl-12">
+                                                        <label>หมายเหตุ</label> 
+                                                    </div>  
+                                                    <div class="col-xl-9"> 
+                                                        <label>-</label> 
+                                                    </div> 
+        
+                                                    <div class="col-xl-12">
+                                                        <label>บันทึก ซ่อมสำเร็จ</label> 
+                                                    </div>  
+                                                    <div class="col-xl-9"> 
+                                                        <textarea class="form-control" name="" rows="4"></textarea>
+                                                        <br> 
+                                                        <button class="btn btn-success">บันทึกการซ่อมสำเร็จ</button>
+                                                    </div> 
+        
+        
+        
                                                 </form>
                                             </div>
+
+                                            
                                         </div>  
                                     </div>
-                                    
-                                    <div class="col">
-                                        <hr>
-                                    </div>
-               
-                                    
                                    
                                    <div class="clearfix">&nbsp;</div>
                                     
+ 
 
-                                
 
                                 </div>
                             </div>
@@ -300,6 +339,44 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"></script>
  
-       
+        <script>
+            $(document).ready( function() {
+                $(document).on('change', '.btn-file :file', function() {
+                var input = $(this),
+                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+                input.trigger('fileselect', [label]);
+                });
+
+                $('.btn-file :file').on('fileselect', function(event, label) {
+                    
+                    var input = $(this).parents('.input-group').find(':text'),
+                        log = label;
+                    
+                    if( input.length ) {
+                        input.val(log);
+                    } else {
+                        if( log ) alert(log);
+                    }
+                
+                });
+                function readURL(input) {
+                    if (input.files && input.files[0]) {
+                        var reader = new FileReader();
+                        
+                        reader.onload = function (e) {
+                            $('#img-upload').attr('src', e.target.result);
+                        }
+                        
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+
+                $("#imgInp").change(function(){
+                    readURL(this);
+                }); 	
+            });
+
+            
+        </script>
     </body>
 </html>
