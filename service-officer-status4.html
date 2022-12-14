@@ -279,24 +279,28 @@
                                                                 </div> 
                                                             </div> 
                                                         </div>
-                                                    </div> 
-        
-                                                    <div class="col-xl-12">
-                                                        <label>หมายเหตุ</label> 
                                                     </div>  
-                                                    <div class="col-xl-9"> 
-                                                        <label>-</label> 
-                                                    </div> 
-        
-                                                    <div class="col-xl-12">
-                                                        <label>บันทึก ซ่อมสำเร็จ</label> 
+                                                    <h4><strong>บันทึกผลการซ่อม</strong></h4> 
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">วันที่ซ่อมสำเร็จ</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <input type="text" class="form-control date"   value="">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                        </div> 
                                                     </div>  
-                                                    <div class="col-xl-9"> 
-                                                        <textarea class="form-control" name="" rows="4"></textarea>
-                                                        <br> 
-                                                        <button class="btn btn-success">บันทึกการซ่อมสำเร็จ</button>
+                                                    <div class="form-group row">
+                                                        <div class="col-xl-3">
+                                                            <label for="">หมายเหตุ</label> 
+                                                        </div>  
+                                                        <div class="col-xl-6"> 
+                                                            <textarea class="form-control" name="" rows="4"></textarea>
+                                                        </div> 
+                                                    </div>  
+                                                    <div class="col-xl-9">  
+                                                        <button class="btn btn-success">บันทึก</button>
                                                     </div> 
-        
         
         
                                                 </form>
@@ -340,43 +344,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.th.min.js"></script>
  
         <script>
-            $(document).ready( function() {
-                $(document).on('change', '.btn-file :file', function() {
-                var input = $(this),
-                    label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-                input.trigger('fileselect', [label]);
-                });
-
-                $('.btn-file :file').on('fileselect', function(event, label) {
-                    
-                    var input = $(this).parents('.input-group').find(':text'),
-                        log = label;
-                    
-                    if( input.length ) {
-                        input.val(log);
-                    } else {
-                        if( log ) alert(log);
-                    }
-                
-                });
-                function readURL(input) {
-                    if (input.files && input.files[0]) {
-                        var reader = new FileReader();
-                        
-                        reader.onload = function (e) {
-                            $('#img-upload').attr('src', e.target.result);
-                        }
-                        
-                        reader.readAsDataURL(input.files[0]);
-                    }
-                }
-
-                $("#imgInp").change(function(){
-                    readURL(this);
-                }); 	
+            $('.date').datepicker({
+                clearBtn: false,
+                language: "th",
+                calendarWeeks: false,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'dd/mm/yyyy',
+                toggleActive: true
             });
 
-            
+
+ 
         </script>
     </body>
 </html>
